@@ -15,13 +15,21 @@
         <div class="nav-container">
             <div class="nav-left">
                 <a href="index.html" class="logo-link">
-                    <div class="logo-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.5"/>
-                            <circle cx="12" cy="12" r="3" fill="currentColor"/>
-                        </svg>
-                    </div>
-                    <span class="logo-text">Dev Patel</span>
+                    <span class="logo-text">
+                        <span class="nav-highlight">
+                            <svg class="nav-highlight-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="navGrad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="var(--search-grad-start)"/>
+                                        <stop offset="100%" stop-color="var(--search-grad-end)"/>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="12" cy="12" r="8" stroke="url(#navGrad)" stroke-width="1.5" fill="none"/>
+                                <circle cx="12" cy="12" r="3" fill="url(#navGrad)"/>
+                            </svg>
+                            Dev Patel
+                        </span>
+                    </span>
                 </a>
             </div>
             
@@ -93,6 +101,18 @@
             </main>
         </div>
     </div>
+
+    <footer id="contact" class="footer">
+        <div class="contact-links">
+            <div class="contact-link-group">
+                <a href="mailto:dev.patel@berkeley.edu" class="contact-link">Email</a>
+                <a href="https://github.com/devpatelio" target="_blank" class="contact-link">GitHub</a>
+                <a href="https://linkedin.com/in/devpatelio" target="_blank" class="contact-link">LinkedIn</a>
+                <a href="https://x.com/devpatelio" target="_blank" class="contact-link">Twitter</a>
+            </div>
+            <div class="contact-search-message">Just search devpatelio :)</div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

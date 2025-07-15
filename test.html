@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .error { color: red; font-weight: bold; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Debug Test</h1>
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+    <script>
+        // Test the introspect-ai project specifically
+        const item = projects.find(p => p.id === 'introspect-ai');
+        const results = document.getElementById('results');
+        
+        if (!item) {
+            results.innerHTML += '<div class="error">❌ Project not found</div>';
+        } else {
+            results.innerHTML += '<div class="success">✅ Project found: ' + item.title + '</div>';
+            
+            // Test all the properties that might be undefined
+            const tests = [
+                { name: 'item.title', value: item.title },
+                { name: 'item.details', value: item.details },
+                { name: 'item.details?.subtitle', value: item.details?.subtitle },
+                { name: 'item.date || item.year', value: item.date || item.year },
+                { name: 'item.category', value: item.category },
+                { name: 'item.tools', value: item.tools },
+                { name: 'item.links', value: item.links },
+                { name: 'item.logo', value: item.logo },
+                { name: 'item.details?.sections', value: item.details?.sections },
+                { name: 'item.details?.cover_image', value: item.details?.cover_image },
+                { name: 'item.description', value: item.description }
+            ];
+            
+            tests.forEach(test => {
+                const status = test.value !== undefined ? '✅' : '❌';
+                const color = test.value !== undefined ? 'success' : 'error';
+                results.innerHTML += `<div class="${color}">${status} ${test.name}: ${test.value}</div>`;
+            });
+            
+            // Test sections specifically
+            if (item.details?.sections) {
+                results.innerHTML += '<h2>Sections Test:</h2>';
+                const sections = item.details.sections;
+                const isNewFormat = sections.length > 0 && sections[0] && sections[0].hasOwnProperty('heading');
+                results.innerHTML += `<div>Format detected: ${isNewFormat ? 'NEW' : 'OLD'}</div>`;
+                
+                sections.forEach((section, i) => {
+                    results.innerHTML += `<h3>Section ${i}:</h3>`;
+                    if (isNewFormat) {
+                        results.innerHTML += `<div>heading: ${section.heading}</div>`;
+                        results.innerHTML += `<div>text: ${section.text}</div>`;
+                        results.innerHTML += `<div>images: ${section.images}</div>`;
+                    } else {
+                        results.innerHTML += `<div>id: ${section.id}</div>`;
+                        results.innerHTML += `<div>title: ${section.title}</div>`;
+                        results.innerHTML += `<div>content: ${section.content}</div>`;
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>

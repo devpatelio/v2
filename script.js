@@ -3,8 +3,8 @@ const projects = [
     {
         id: 'introspect-ai',
         title: 'Introspect AI',
-        year: '2024',
-        date: 'December 2024',
+        year: '2025',
+        date: 'June 2025',
         category: 'AI Research',
         status: 'Completed',
         location: 'San Francisco',
@@ -12,7 +12,14 @@ const projects = [
         tech: ['React', 'Three.js', 'Flask', 'UMAP', 'Claude API', 'Supabase'],
         tools: 'React, Three.js, Flask, UMAP, Claude API, Supabase',
         logo: 'IA',
+        card_image: 'cover/introspect.png',
+        links: [
+            { label: 'Live Demo', url: 'https://introspect-ai.com' },
+            { label: 'GitHub', url: 'https://github.com/devpatelio/introspect-ai' },
+            { label: 'Documentation', url: 'https://docs.introspect-ai.com' }
+        ],
         details: {
+            cover_image: 'cover/introspect.png',
             subtitle: 'Your AI conversations, beautifully visualized in 3D space',
             type: 'Full-stack Application',
             year: '2024',
@@ -43,8 +50,8 @@ const projects = [
     {
         id: 'microml',
         title: 'MicroML',
-        year: '2024',
-        date: 'October 2024',
+        year: '2025',
+        date: 'May 2025',
         category: 'ML Infrastructure',
         status: 'Completed',
         location: 'Remote',
@@ -52,30 +59,41 @@ const projects = [
         tech: ['C++20', 'SIMD', 'xsimd', 'Graphviz'],
         tools: 'C++20, SIMD, xsimd, Graphviz',
         logo: 'ML',
+        card_image: 'https://pbs.twimg.com/media/GrvbT6JXEAAxPkZ?format=jpg&name=large',
+        links: [
+            { label: 'GitHub', url: 'https://github.com/devpatelio/microml' },
+            { label: 'Thread', url: 'https://x.com/devpatelio/status/1926376515043721636' }
+        ],
         details: {
-            subtitle: 'Lightweight neural network framework with automatic differentiation',
-            type: 'Research Framework',
-            year: '2024',
+            cover_image: 'https://raw.githubusercontent.com/devpatelio/microml/main/cover.png',
             sections: [
                 {
-                    id: 'overview',
-                    title: 'Architecture & Design',
-                    content: 'MicroML is a lightweight neural network framework built with core deep learning components in C++. It features automatic differentiation with computational graph optimizations, SIMD-optimized tensor operations, and end-to-end training workflows - all with minimal dependencies. The system uses dynamic graph building with topological sorting for efficient gradient flow.'
+                    heading: 'Overview',
+                    text: 'MicroML is a lightweight neural network framework built with core deep learning components in C++. It features automatic differentiation with computational graph optimizations, SIMD-optimized tensor operations, and end-to-end training workflows - all with minimal dependencies. The system uses dynamic graph building with topological sorting for efficient gradient flow.',
+                    images: []
                 },
                 {
-                    id: 'features',
-                    title: 'Core Features',
-                    content: 'Automatic Differentiation: Computational graph construction with reverse-mode autodiff and efficient backpropagation. Tensor Operations: Broadcasting, SIMD-accelerated MatMul leveraging xsimd for AVX2/FMA speed. Neural Network Components: Value system with smart pointer-based computational nodes, loss functions (cross-entropy, MSE), activation functions (ReLU, Sigmoid), and configurable MLPs with Xavier initialization.'
+                    heading: 'Core Features',
+                    text: 'Automatic Differentiation: Computational graph construction with reverse-mode autodiff and efficient backpropagation. Tensor Operations: Broadcasting, SIMD-accelerated MatMul leveraging xsimd for AVX2/FMA speed. Neural Network Components: Value system with smart pointer-based computational nodes, loss functions (cross-entropy, MSE), activation functions (ReLU, Sigmoid), and configurable MLPs with Xavier initialization.',
+                    images: []
                 },
                 {
-                    id: 'performance',
-                    title: 'Performance Results',
-                    content: 'Achieved consistent 8-9x speedup across all training scenarios with SIMD optimization. Training time reduced from 4.7 minutes to 32 seconds, making experimentation much more interactive. Matrix operations leverage AVX2/FMA instructions with cache-friendly memory access patterns. Successfully demonstrated learning on XOR gate (100% accuracy) and greater than gate (98% accuracy) classification tasks.'
+                    heading: 'Performance Results',
+                    text: 'Achieved consistent 8-9x speedup across all training scenarios with SIMD optimization. Training time reduced from 4.7 minutes to 32 seconds, making experimentation much more interactive. Matrix operations leverage AVX2/FMA instructions with cache-friendly memory access patterns. Successfully demonstrated learning on XOR gate (100% accuracy) and greater than gate (98% accuracy) classification tasks.',
+                    images: [
+                        'https://raw.githubusercontent.com/devpatelio/microml/main/viz/ce_test.png',
+                        'https://raw.githubusercontent.com/devpatelio/microml/main/viz/xor_ce_test.png'
+                    ]
                 },
                 {
-                    id: 'technical',
-                    title: 'Technical Implementation',
-                    content: 'Built with C++20 featuring computational graph engine with automatic gradient tracking, tensor broadcasting for NumPy-style operations, SIMD-optimized matrix multiplication using vectorized instructions, and AdamW optimizer with adaptive learning rates and weight decay. Includes graph visualization via DOT file generation for educational purposes and comprehensive examples with binary classification workflows.'
+                    heading: 'Technical Implementation',
+                    text: `Built with C++20 featuring computational graph engine with automatic gradient tracking, tensor broadcasting for NumPy-style operations, SIMD-optimized matrix multiplication using vectorized instructions, and AdamW optimizer with adaptive learning rates and weight decay. Includes graph visualization via DOT file generation for educational purposes and comprehensive examples with binary classification workflows.`,
+                    images: []
+                },
+                {
+                    heading: 'Key Learning Outcomes',
+                    text: 'This was an incredibly fun project to build that got me deep into the weeds of C++ and creating a powerful API for ML. Key learnings include automatic differentiation and computational graphs, memory management with smart pointers, numerical stability in loss functions, linear algebra operations and broadcasting, optimization theory with adaptive learning rates, and software architecture for modular ML components.',
+                    images: []
                 }
             ]
         }
@@ -83,8 +101,8 @@ const projects = [
     {
         id: 'agile-agents',
         title: 'Agile Agents: Multi-Agent LLM Framework for Large-Scale Software Projects',
-        year: '2024',
-        date: 'October 2024',
+        year: '2025',
+        date: 'March 2025',
         category: 'AI Research',
         status: 'Completed',
         location: 'Remote',
@@ -92,114 +110,293 @@ const projects = [
         tech: ['Python', 'LLMs', 'Orchestration', 'Multi-Agent Systems'],
         tools: 'Python, LLMs, Custom Orchestration, Hierarchical Agents',
         logo: 'AA',
+        card_image: 'cover/cot.png',
         details: {
-            subtitle: 'Multi-agent LLM framework for collaborative software engineering',
-            type: 'Research Project',
-            year: '2024',
+            cover_image: 'cover/agile_agent.png',
             sections: [
-                { id: 'overview', title: 'Overview', content: 'Agile Agents is a multi-agent LLM framework designed for large-scale software projects. It enables dynamic task delegation and hierarchical orchestration among specialized LLM agents.' },
-                { id: 'architecture', title: 'Architecture', content: 'Features agent task delegation, hierarchical orchestration, structured history management, and context-sharing for accurate task decomposition and self-assessment.' },
-                { id: 'results', title: 'Results', content: 'Achieved 25% success rate on real-world software engineering tasks, outperforming single-agent approaches by 2.3x.' },
-                { id: 'publications', title: 'Publications', content: 'See whitepaper and code for more details.' }
+                {
+                    heading: 'Overview',
+                    text: 'Agile Agents is a multi-agent LLM framework designed for large-scale software projects. It enables dynamic task delegation and hierarchical orchestration among specialized LLM agents, featuring agent task delegation, structured history management, and context-sharing for accurate task decomposition.',
+                    images: []
+                },
+                {
+                    heading: 'Results',
+                    text: 'Achieved 25% success rate on real-world software engineering tasks, outperforming single-agent approaches by 2.3x. The framework demonstrates effective collaboration between multiple AI agents working on complex software engineering challenges.',
+                    images: ['cover/whitepaper.png']
+                }
             ]
         }
     },
     {
-        id: 'unitrial',
-        title: 'UniTrial: Optimizing Clinical Trial Patient Recruitment with RAG',
-        year: '2024',
-        date: 'May 2024 - Present',
-        category: 'Health AI',
-        status: 'In Progress',
-        location: 'Remote',
-        description: 'Built Multi-Modal RAG on LlamaIndex with Mistral-7B, MED-BERT, and BGE for embedding unstructured and structured medical data; created vector database (ChromaDB) to manage clinical trial and patient EHR data.',
-        tech: ['LlamaIndex', 'Mistral-7B', 'MED-BERT', 'BGE', 'ChromaDB', 'REST API'],
-        tools: 'Python, LlamaIndex, ChromaDB, FHIR, MESH-IDs',
-        logo: 'UT',
-        details: {
-            subtitle: 'Multi-modal RAG for clinical trial recruitment',
-            type: 'AI System',
-            year: '2024',
-            sections: [
-                { id: 'overview', title: 'Overview', content: 'UniTrial optimizes clinical trial patient recruitment using a multi-modal RAG system built on LlamaIndex, Mistral-7B, MED-BERT, and BGE.' },
-                { id: 'technical', title: 'Technical Implementation', content: 'Created a vector database (ChromaDB) for clinical trial and EHR data. Built a custom REST API for ClinicalTrials.Gov integration and structured query with FHIR and MESH-IDs.' },
-                { id: 'api', title: 'API & Interoperability', content: 'Flexible query options, real-time updates, and minimized hallucination for accurate trial-patient matching.' },
-                { id: 'demo', title: 'Demo', content: 'See GitHub and live demo for more details.' }
-            ]
+        "id": "unitrial",
+        "title": "UniTrial: Optimizing Clinical Trial Patient Recruitment with RAG",
+        "year": "2024",
+        "date": "May 2024 - Present",
+        "category": "Health AI",
+        "status": "In Progress",
+        "location": "Remote",
+        "description": "Built Multi-Modal RAG on LlamaIndex with Mistral-7B, MED-BERT, and BGE for embedding unstructured and structured medical data; created vector database (ChromaDB) to manage clinical trial and patient EHR data.",
+        "tech": ["LlamaIndex", "Mistral-7B", "MED-BERT", "BGE", "ChromaDB", "REST API"],
+        "tools": "Python, LlamaIndex, ChromaDB, FHIR, MESH-IDs",
+        "logo": "UT",
+        "card_image": "cover/unitrial.png",
+        "details": {
+          "cover_image": "https://www.fightcancer.org/sites/default/files/National%20Images/Resources%20Graphics/Fig%2010%20Patient-facing%20Clinical%20Trial%20Matching%20150.jpg",
+          "subtitle": "Multi-modal RAG for clinical trial recruitment",
+          "type": "AI System",
+          "year": "2024",
+          "sections": [
+            {
+              "id": "inspiration",
+              "title": "Inspiration",
+              "content": "Drug discovery costs billions, with cancer and neurodegenerative trials facing a 97% failure rate. Patient recruitment is the biggest bottleneck for early-stage oncology trials, worsened by fragmented EHRs and local recruitment barriers. UniTrial aims to solve this with an AI-powered patient-trial matchmaker, using live ClinicalTrials.Gov data and patient EHRs to reduce recruitment time and improve outcomes."
+            },
+            {
+              "id": "overview",
+              "title": "What It Does",
+              "content": "The system takes patient EHR PDFs or condition prompts and matches them to suitable trials using a RAG pipeline with Mistral-7B, MED-BERT, and BGE embeddings. It uses a novel schema with FHIR and MESH IDs to reduce hallucinations. It features EHR de-identification, real-time updates, and dual visualizations for patients and CROs to search trials and patients securely."
+            },
+            {
+              "id": "technical",
+              "title": "How We Built It",
+              "content": "We preprocess EHRs, extract biomarkers, embed structured/unstructured data with MED-BERT/BGE, and store them in ChromaDB. Our custom REST API extends ClinicalTrials.gov queries. Vector similarity searches select top trial matches, minimizing hallucination. Langchain, Firebase, and Streamlit power the system, and future releases will add HIPAA-compliant patient data support."
+            },
+            {
+              "id": "business",
+              "title": "Business Model",
+              "content": "UniTrial’s revenue model includes subscriptions for CROs and value-based pricing for successful matches. Pharmaceutical sponsors can advertise trials for higher visibility, building a two-sided market moat. Our advantage is combining cutting-edge RAG AI with robust patient data pipelines."
+            },
+            {
+              "id": "challenges",
+              "title": "Challenges",
+              "content": "Key challenges included finding usable EHR datasets, aligning LLM output with our vector database, and reducing hallucination. Extensive cleaning and tuning helped refine the system."
+            },
+            {
+              "id": "impact",
+              "title": "Impact & Next Steps",
+              "content": "We’re proud to have reduced hallucination rates and built a robust patient-trial search system. Next, we’re adding real EHR clusters to enable patient-side recruitment and expanding disease areas. See our GitHub for live demos."
+            },
+            {
+              "id": "links",
+              "title": "Links",
+              "content": "[GitHub](https://github.com/devpatelio/unitrial)"
+            }
+          ]
         }
-    },
+      },
+      {
+        "id": "bluesky",
+        "title": "Project BlueSky: Multimodal Mental Health Patient Monitoring",
+        "year": "2023",
+        "date": "Jan 2023 - May 2023",
+        "category": "Health AI",
+        "status": "Completed",
+        "location": "Remote",
+        "description": "Built multimodal deep learning system (BlueSky) for personalized mental health support, using audio, facial, and text cues to extract emotion and behavioral insight in real-time.",
+        "tech": ["MFCC", "BiLSTM-CRF", "DeepSpeech2", "CNN", "Haar Cascades"],
+        "tools": "Python, PyTorch, OpenCV, DeepSpeech2",
+        "logo": "BS",
+        "card_image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*YMQ1a_N6iDDiEtXq7HV7iw.png",
+        "details": {
+          "cover_image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*Nkm1m0lOCq76jC-mtG3Qwg.png",
+          "subtitle": "Multimodal deep learning for mental health monitoring",
+          "type": "AI System",
+          "year": "2023",
+          "sections": [
+            {
+              "id": "inspiration",
+              "title": "Inspiration",
+              "content": "Mental health care access remains a global crisis, with 70% of individuals receiving no treatment and many others lacking personalized care. Project BlueSky was inspired by the need to create emotionally intelligent systems that go beyond chatbots and understand the nuances of human speech, tone, and expression."
+            },
+            {
+              "id": "overview",
+              "title": "Overview",
+              "content": "BlueSky uses deep learning to analyze facial expressions, speech tone, and spoken text to identify emotional patterns and psychological triggers. By capturing mood and sentiment across multiple modalities, it offers a robust patient profile that can assist mental health professionals or users themselves."
+            },
+            {
+              "id": "voice",
+              "title": "Voice & Audio Pipeline",
+              "content": "Audio data is preprocessed using Mel-Frequency Cepstral Coefficients (MFCCs), spectrograms, and LSTM networks to model time-series emotion. Speech-to-text is performed using a DeepSpeech2-inspired model that feeds audio through convolutional layers and gated recurrent units to transcribe speech while retaining emotional cues."
+            },
+            {
+              "id": "face",
+              "title": "Facial Sentiment Pipeline",
+              "content": "Facial sentiment is detected using Haar Cascades for face localization and 68-point landmark detection to model emotions through spatial geometry. A CNN-based classifier complements this with pixel-level emotion recognition, offering redundancy and improving prediction confidence in real time."
+            },
+            {
+              "id": "nlp",
+              "title": "Conversation & NLP",
+              "content": "Using ASR output, the system applies PoS tagging, Named Entity Recognition (NER), and key-phrase extraction using a BiLSTM-CRF architecture. This helps map specific phrases to emotional shifts, enabling the system to surface potentially meaningful or concerning thoughts within a user's narrative."
+            },
+            {
+              "id": "tech-stack",
+              "title": "Technical Stack",
+              "content": "Core models were built in PyTorch and OpenCV. DeepSpeech2 and MFCC pipelines powered audio, Haar Cascades and CNNs enabled facial analysis, and NLTK and CRF models handled NLP. Pretrained models improved low-data generalization."
+            },
+            {
+              "id": "impact",
+              "title": "Impact & Purpose",
+              "content": "BlueSky bridges the gap between machines and mental health support. It aims not to replace therapists, but to provide better tools for understanding patient emotions and context, creating a more compassionate and data-rich foundation for care."
+            },
+            {
+              "id": "links",
+              "title": "Read More",
+              "content": "https://ai.plainenglish.io/we-can-do-better-than-chat-bots-for-mental-health-9979b875e55e"
+            }
+          ]
+        }
+      },
+      {
+        "id": "rolodex",
+        "title": "Rolodex: External Memory for Dementia Patients",
+        "year": "2023",
+        "date": "August 2023",
+        "category": "Health AI",
+        "status": "Prototype",
+        "location": "Remote",
+        "description": "Rolodex is an AI-powered external memory system built on Brilliant Labs Frame Glasses to help people with Alzheimer's and memory disorders remember faces, relationships, and past conversations.",
+        "tech": ["Brilliant Labs Frame Glasses", "Facial Recognition", "ASR", "Vector Search", "Database Management"],
+        "tools": "Python, OpenCV, FaceNet, Whisper ASR, Supabase",
+        "logo": "RX",
+        "card_image": "cover/glasses.png",
+        "details": {
+        "cover_image": "cover/rolodex.png",
+          "subtitle": "Wearable memory augmentation for dementia",
+          "type": "Hardware + AI Prototype",
+          "year": "2024",
+          "sections": [
+            {
+              "id": "inspiration",
+              "title": "Inspiration",
+              "content": "Dementia and Alzheimer's patients often struggle to remember loved ones and their relationships, which can be emotionally challenging. Rolodex was inspired by the idea of giving patients a gentle external memory system to help them stay connected."
+            },
+            {
+              "id": "overview",
+              "title": "What It Does",
+              "content": "With Brilliant Labs Frame Glasses, users can tap to start recording conversations. The glasses capture short interactions, transcribe speech, and store them with timestamps and face snapshots. This creates a living memory bank linked to the people in their lives."
+            },
+            {
+              "id": "pipeline",
+              "title": "How It Works",
+              "content": "Captured audio is transcribed with an ASR model (Whisper). Frames from the glasses camera are processed with FaceNet for facial embeddings. These embeddings are cross-referenced with the user’s personal 'Rolodex' — a database of known faces, relationship tags, and context notes. Users can later search conversations and view memory logs by person or relationship."
+            },
+            {
+              "id": "interaction",
+              "title": "User Experience",
+              "content": "Tap to start or stop conversations. The system updates memory profiles in real-time. Users or caregivers can add notes, context, or photos to strengthen associations. The chat-based interface helps patients retrieve ‘who was this?’ and ‘what did we talk about?’ moments easily."
+            },
+            {
+              "id": "impact",
+              "title": "Impact & Next Steps",
+              "content": "Rolodex aims to reduce anxiety and loneliness for dementia patients by augmenting their memory in a private, user-controlled way. Next steps include improving face matching, real-time processing, and integrating with clinical care routines for wider adoption."
+            }
+          ]
+        }
+      },    
     {
-        id: 'bluesky',
-        title: 'Project BlueSky: Multimodal Mental Health Patient Monitoring',
-        year: '2023',
-        date: 'Jan 2023 - May 2023',
-        category: 'Health AI',
-        status: 'Completed',
-        location: 'Remote',
-        description: 'Built multimodal deep learning system (BlueSky) for personalized mental health support, utilizing MFCC for audio processing, 68-point facial landmark detection, and BiLSTM-CRF for key-phrase extraction.',
-        tech: ['MFCC', 'BiLSTM-CRF', 'DeepSpeech2', 'CNN', 'Haar Cascades'],
-        tools: 'Python, PyTorch, OpenCV, DeepSpeech2',
-        logo: 'BS',
-        details: {
-            subtitle: 'Multimodal deep learning for mental health monitoring',
-            type: 'AI System',
-            year: '2023',
-            sections: [
-                { id: 'overview', title: 'Overview', content: 'BlueSky is a multimodal deep learning system for personalized mental health support, combining audio, facial, and text analysis.' },
-                { id: 'pipeline', title: 'ML Pipeline', content: 'Audio sentiment analysis (LSTM with mel spectrograms), facial feature detection (CNN + Haar Cascades), ASR (DeepSpeech2), and NLP (POS tagging, NER).' },
-                { id: 'results', title: 'Results', content: 'Enabled time-series sentiment analysis and contextualized embeddings to connect emotional cues with specific phrases.' },
-                { id: 'impact', title: 'Impact', content: 'Innovative approach to mental health care, improving patient mood evaluation.' }
-            ]
+        "id": "pyr-health",
+        "title": "PYR Health: Microfluidic Device for Remote Blood Counts",
+        "year": "2024",
+        "date": "Nov 2023 - June 2024",
+        "category": "Bioengineering",
+        "status": "In Progress",
+        "location": "UC Berkeley",
+        "description": "Designed custom microfluidic chip and computer vision system for low-cost CBC counts, helping chemotherapy patients monitor blood toxicity remotely.",
+        "tech": ["Microfluidics", "Vision Transformers", "YoloV8", "Random Forest"],
+        "tools": "Python, MxNet, YoloV8, Custom Hardware",
+        "logo": "PYR",
+        "card_image": "cover/pyr_card.png",
+        "details": {
+          "cover_image": "cover/pyr_cover.png",
+          "subtitle": "Low-cost CBC monitoring for chemotherapy patients",
+          "type": "Bioengineering Project",
+          "year": "2023",
+          "sections": [
+            {
+              "id": "problem",
+              "title": "Problem Statement",
+              "content": "Cancer’s high mortality rates are partly due to chemotherapy’s severe side effects and poor monitoring in resource-limited settings. Standard CBC tests are costly, require large equipment, and are inaccessible for many, leading to avoidable complications and treatment delays."
+            },
+            {
+              "id": "background",
+              "title": "Background",
+              "content": "Chemotherapy-induced anemia, neutropenia, and platelet deficiencies can be fatal if unmonitored. Yet, existing monitoring systems are expensive and infrequent, especially in developing regions where cancer mortality is up to 1000% higher than in developed nations."
+            },
+            {
+              "id": "solution",
+              "title": "Solution",
+              "content": "PYR Health proposes a portable, low-cost microfluidic device that prepares blood samples automatically. A vision transformer and YoloV8 pipeline processes blood smears for real-time WBC, RBC, and platelet counts. This empowers continuous monitoring, integrates with physician workflows, and provides detailed cell morphology data."
+            },
+            {
+              "id": "technical",
+              "title": "Technical Pipeline",
+              "content": "Custom chip design automates sample prep. The microscope apparatus captures images, which a ViT processes for cell classification. Ensemble models like Random Forest validate cytotoxicity risks with 85% accuracy, improving dosing decisions."
+            },
+            {
+              "id": "impact",
+              "title": "Impact & Vision",
+              "content": "Enables outpatient chemotherapy monitoring, lowering hospital costs and improving patient survival by avoiding toxicity-related delays. Finalist at UC Big Ideas. Long-term vision: scalable, affordable CBC diagnostics for underserved regions."
+            },
+            {
+              "id": "links",
+              "title": "Links",
+              "content": "[Read More](https://docs.google.com/document/d/1gKT-vwVgJ1WBZjoQ3S6IHzCznSWmHcdrbjg12vnIwdA/edit?usp=sharing)"
+            }
+          ]
         }
-    },
-    {
-        id: 'microfluidic-bloodcount',
-        title: 'Microfluidic Device for Low-Cost Blood Counts for Cancer Patients',
-        year: '2023',
-        date: 'Nov 2023 - Present',
-        category: 'Bioengineering',
-        status: 'In Progress',
-        location: 'UC Berkeley',
-        description: 'Designed custom microfluidic chip, microscope apparatus, and vision transformer to determine blood cytotoxicity and predict chemotherapy side-effects.',
-        tech: ['Microfluidics', 'Vision Transformers', 'YoloV8', 'MxNet', 'Random Forest'],
-        tools: 'Python, MxNet, YoloV8, Random Forest, Custom Hardware',
-        logo: 'MD',
-        details: {
-            subtitle: 'Microfluidic chip and ML for blood cytotoxicity',
-            type: 'Bioengineering Project',
-            year: '2023',
-            sections: [
-                { id: 'overview', title: 'Overview', content: 'Developed a microfluidic device and vision transformer system for low-cost blood counts and cytotoxicity prediction in cancer patients.' },
-                { id: 'device', title: 'Device Design', content: 'Custom chip, microscope, and fine-tuned YoloV8 for PBMC and cell viability detection.' },
-                { id: 'ml', title: 'ML Pipeline', content: 'Trained Random Forest classifier for cytotoxicity classification with 85% validation score.' },
-                { id: 'results', title: 'Results', content: 'Finalist at UC Big Ideas. Improved blood count accuracy and side-effect prediction.' }
-            ]
+      },
+      {
+        "id": "alzheimers-druggability",
+        "title": "Alzheimer’s Genome Variant and Druggability Project",
+        "year": "2022",
+        "date": "Jan 2022",
+        "category": "Bioinformatics",
+        "status": "Completed",
+        "location": "UK",
+        "description": "Explored genetic variation in motor neurone disease to discover new drug targets, combining GWAS insights, Mendelian Randomization, and drug-protein interactions using ChemBL.",
+        "tech": ["GWAS", "Mendelian Randomization", "ChemBL", "Drug Repurposing"],
+        "tools": "Python, Bioinformatics, VEP, BCFtools",
+        "logo": "AD",
+        "card_image": "cover/NGV_hunters_logo.png",
+        "details": {
+          "cover_image": "https://user-images.githubusercontent.com/11878969/149540648-551f283d-c2fb-434f-9dac-e94540eb023c.png",
+          "subtitle": "Drug repurposing for Alzheimer’s and Motor Neuron Disease using genomics",
+          "type": "Research Project",
+          "year": "2022",
+          "sections": [
+            {
+              "id": "inspiration",
+              "title": "Inspiration",
+              "content": "Motor neurone diseases (like ALS) have a complex genetic architecture. New GWAS findings revealed multiple risk loci, offering a path to discover novel drug targets and repurpose existing compounds for neurodegenerative disease longevity."
+            },
+            {
+              "id": "aims",
+              "title": "Project Aims",
+              "content": "Our team (NGV Hunters) focused on three goals: (1) Explore genetic variation linked to ALS, (2) use Mendelian Randomization to infer causal links between variants and disease, and (3) build a drug discovery pipeline for druggable targets."
+            },
+            {
+              "id": "pipeline",
+              "title": "Pipeline",
+              "content": "We processed variant data with VEP and BCFtools, ran Mendelian Randomization scatter plots to estimate SNP effects, and conducted funnel plot analyses to validate instruments. For drug discovery, we mapped causal genes to ChemBL and drug-protein interaction datasets to rank therapeutic candidates."
+            },
+            {
+              "id": "results",
+              "title": "Results & Impact",
+              "content": "The pipeline identified novel ALS gene targets with high druggability scores. We extended the analysis to pathway and transmembrane region enrichment, highlighting actionable nodes for future pre-clinical studies."
+            },
+            {
+              "id": "awards",
+              "title": "Awards",
+              "content": "Won 1st place in the UK’s DEMON Dementia Network Neurohack Challenge, receiving a $10K research grant for continued work on Alzheimer’s and motor neurone disease drug repurposing."
+            },
+            {
+              "id": "links",
+              "title": "Project Resources",
+              "content": "[GitHub Repo](https://github.com/devpatelio/Neurohack-C3-LA-Solution)"
+            }
+          ]
         }
-    },
-    {
-        id: 'alzheimers-druggability',
-        title: 'Alzheimer’s Genome Variant and Druggability Project',
-        year: '2022',
-        date: 'Jan 2022',
-        category: 'Bioinformatics',
-        status: 'Completed',
-        location: 'UK',
-        description: 'Developed drug-repurposing models using drug-protein interaction datasets given a set of causal genes generated using GWAS models (Mendelian Randomization) through Python and ChemBL Library.',
-        tech: ['GWAS', 'Mendelian Randomization', 'ChemBL', 'Drug Repurposing'],
-        tools: 'Python, ChemBL, Bioinformatics',
-        logo: 'AD',
-        details: {
-            subtitle: 'Drug repurposing for Alzheimer’s using genomics',
-            type: 'Research Project',
-            year: '2022',
-            sections: [
-                { id: 'overview', title: 'Overview', content: 'Developed drug-repurposing models using GWAS and Mendelian Randomization to identify causal genes and therapeutic targets.' },
-                { id: 'pipeline', title: 'Pipeline', content: 'Used ChemBL and drug-protein interaction datasets to score druggability of novel ALS genes.' },
-                { id: 'results', title: 'Results', content: 'Identified novel ALS genes with therapeutic potential. Won 1st place and $10K USD Research Grant from UK’s DEMON Dementia Network.' },
-                { id: 'awards', title: 'Awards', content: '1st place, $10K grant, DEMON Dementia Network.' }
-            ]
-        }
-    }
+      }      
 ];
 
 // Work experience data
@@ -216,7 +413,9 @@ const experiences = [
         tech: ['C++', 'CUDA', 'OpenCL', 'Python', 'Vitis HLS'],
         tools: 'C++, CUDA, OpenCL, Python, Vitis HLS',
         logo: 'AMD',
+        card_image: 'https://pbs.twimg.com/media/DeDsacZXcAIgeEc.jpg',
         details: {
+            cover_image: 'cover/rai2.png',
             subtitle: 'AI Software Developer',
             type: 'Full-time',
             year: '2025',
@@ -251,7 +450,9 @@ const experiences = [
         tech: ['PyTorch', 'Transformers', 'scikit-learn', 'Pandas', 'MLflow'],
         tools: 'PyTorch, Transformers, scikit-learn, Pandas, MLflow',
         logo: 'BAIR',
+        card_image: 'https://educationsnapshots.com/wp-content/uploads/sites/4/2020/10/university-of-california-berkeley-college-of-engineering-berkeley-artificial-intelligence-research-lab-bair-5-1200x801.jpg',
         details: {
+            cover_image: 'cover/bair.png',
             subtitle: 'Applied ML Researcher',
             type: 'Research Position',
             year: '2024',
@@ -286,7 +487,9 @@ const experiences = [
         tech: ['Project Management', 'Strategic Planning', 'Health-Tech', 'Data Analysis'],
         tools: 'Project Management, Strategic Planning, Health-Tech, Data Analysis',
         logo: 'HE',
+        card_image: 'cover/he.jpg',
         details: {
+            cover_image: 'cover/he_perf.png',
             subtitle: 'Project Manager',
             type: 'Permanent Full-time',
             year: '2023',
@@ -321,7 +524,9 @@ const experiences = [
         tech: ['PyTorch', 'Transformers', 'Bioinformatics', 'CUDA', 'Docker'],
         tools: 'PyTorch, Transformers, Bioinformatics, CUDA, Docker',
         logo: 'GI',
+        card_image: 'https://phiab.com/wp-content/uploads/2020/05/SanFrancisco-1024x341.jpg',
         details: {
+            cover_image: 'cover/ye.png',
             subtitle: 'Deep Learning Intern',
             type: 'Internship',
             year: '2024',
@@ -356,7 +561,9 @@ const experiences = [
         tech: ['Python', 'R', 'Bioinformatics', 'MATLAB', 'Linux'],
         tools: 'Python, R, Bioinformatics, MATLAB, Linux',
         logo: 'UT',
+        card_image: 'https://display.blogto.com/articles/20250121-university-of-toronto-ranking.jpg',
         details: {
+            cover_image: 'cover/poster.png',
             subtitle: 'Dry Lab Engineer',
             type: 'Research Position',
             year: '2022',
@@ -391,7 +598,9 @@ const experiences = [
         tech: ['TensorFlow', 'NLP', 'Python', 'scikit-learn', 'Jupyter'],
         tools: 'TensorFlow, NLP, Python, scikit-learn, Jupyter',
         logo: 'BS',
+        card_image: 'https://cdn.betakit.com/wp-content/uploads/2023/10/Untitled-design-2-1.jpg',
         details: {
+            cover_image: 'https://i.ytimg.com/vi/fPs5xzYYHSs/hqdefault.jpg',
             subtitle: 'ML Research Intern',
             type: 'Internship',
             year: '2021',
@@ -418,7 +627,7 @@ const experiences = [
 
 // Image carousel data
 const carouselImages = [
-    { src: 'media_converted/IMG_9971.jpg', alt: 'Photo 1' },
+    // { src: 'media_converted/IMG_9971.jpg', alt: 'Photo 1' },
     { src: 'media_converted/IMG_9871.jpg', alt: 'Photo 2' },
     { src: 'media_converted/IMG_8069.jpg', alt: 'Photo 5' },
     { src: 'media_converted/IMG_8064.jpg', alt: 'Photo 6' },
@@ -444,7 +653,7 @@ const carouselImages = [
     { src: 'media_converted/IMG_2211.jpg', alt: 'Photo 35' },
     { src: 'media_converted/IMG_0621.jpg', alt: 'Photo 37' },
     { src: 'media_converted/IMG_0232.jpg', alt: 'Photo 38' },
-    { src: 'media_converted/B9556B60-DC38-4820-A4B5-72EC4936D702.jpg', alt: 'Photo 40' }
+    // { src: 'media_converted/B9556B60-DC38-4820-A4B5-72EC4936D702.jpg', alt: 'Photo 40' }
 ];
 
 // Shuffle carousel images on each page load
@@ -521,7 +730,10 @@ function createProjectCard(item) {
     
     card.innerHTML = `
         <div class="project-image">
-            <span class="project-image-text">${item.category}</span>
+            ${item.card_image ? 
+                `<img src="${item.card_image}" alt="${item.title}" style="width: 100%; height: 100%; object-fit: cover;">` : 
+                `<span class="project-image-text">${item.category}</span>`
+            }
         </div>
         <div class="project-content">
             <div class="project-header">
@@ -577,13 +789,37 @@ function showProjectInPanel(item) {
     const content = document.getElementById('articleContent');
     const mainContent = document.querySelector('.main-content');
 
-    // Build sections HTML
-    const sectionsHTML = (item.details.sections || []).map(section => `
-        <div class="article-section">
-            <h3 class="article-section-title">${section.title}</h3>
-            <div class="article-section-content">${section.content}</div>
-        </div>
-    `).join('');
+    // Build sections HTML - use unified format detection like detail.html
+    const sections = item.details?.sections || [];
+    const isNewFormat = sections.length > 0 && sections[0] && sections[0].hasOwnProperty('heading');
+    
+    const sectionsHTML = sections
+        .filter(section => section && (section.heading || section.title)) // Filter out invalid sections
+        .map(section => {
+            if (isNewFormat && section.heading) {
+                // New simplified format
+                return `
+                    <div class="article-section">
+                        <h3 class="article-section-title">${section.heading}</h3>
+                        <div class="article-section-content">${section.text || ''}</div>
+                        ${section.images && section.images.length > 0 ? 
+                            section.images.map(img => `<img src="${img}" class="inline-image" alt="" style="max-width: 100%; margin: 1rem 0; border-radius: 8px;">`).join('') 
+                            : ''}
+                    </div>
+                `;
+            } else if (!isNewFormat && section.id && section.title) {
+                // Old complex format
+                return `
+                    <div class="article-section">
+                        <h3 class="article-section-title">${section.title}</h3>
+                        <div class="article-section-content">${section.content || ''}</div>
+                    </div>
+                `;
+            }
+            return '';
+        })
+        .filter(s => s) // Remove empty strings
+        .join('');
 
     // Determine type for detail page link
     const isExp = experiences.some(e => e.id === item.id);
@@ -621,7 +857,10 @@ function showProjectInPanel(item) {
             </div>
         </div>
         <div class="article-hero-image">
-            ${item.logo}
+            ${item.details?.cover_image ? 
+                `<img src="${item.details.cover_image}" alt="${item.title} cover" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">` : 
+                item.logo
+            }
         </div>
         ${sectionsHTML}
     `;
@@ -638,16 +877,50 @@ function createProjectPage(project) {
     page.className = 'project-page';
     page.id = `project-${project.id}`;
     
-    const contentsList = project.details.sections.map(section => 
-        `<li><a href="#${section.id}" onclick="scrollToSection('${section.id}')">${section.title}</a></li>`
-    ).join('');
+    // Use unified format detection like detail.html and showProjectInPanel
+    const sections = project.details?.sections || [];
+    const isNewFormat = sections.length > 0 && sections[0] && sections[0].hasOwnProperty('heading');
     
-    const sectionsHTML = project.details.sections.map(section => `
-        <section class="section" id="${section.id}">
-            <h2 class="section-title">${section.title}</h2>
-            <div class="section-content">${section.content}</div>
-        </section>
-    `).join('');
+    const contentsList = sections
+        .filter(section => section && (section.heading || section.title))
+        .map(section => {
+            if (isNewFormat && section.heading) {
+                const id = section.heading.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+                return `<li><a href="#${id}" onclick="scrollToSection('${id}')">${section.heading}</a></li>`;
+            } else if (!isNewFormat && section.id && section.title) {
+                return `<li><a href="#${section.id}" onclick="scrollToSection('${section.id}')">${section.title}</a></li>`;
+            }
+            return '';
+        })
+        .filter(s => s)
+        .join('');
+    
+    const sectionsHTML = sections
+        .filter(section => section && (section.heading || section.title))
+        .map(section => {
+            if (isNewFormat && section.heading) {
+                const id = section.heading.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+                return `
+                    <section class="section" id="${id}">
+                        <h2 class="section-title">${section.heading}</h2>
+                        <div class="section-content">${section.text || ''}</div>
+                        ${section.images && section.images.length > 0 ? 
+                            section.images.map(img => `<img src="${img}" class="inline-image" alt="" style="max-width: 100%; margin: 1rem 0; border-radius: 8px;">`).join('') 
+                            : ''}
+                    </section>
+                `;
+            } else if (!isNewFormat && section.id && section.title) {
+                return `
+                    <section class="section" id="${section.id}">
+                        <h2 class="section-title">${section.title}</h2>
+                        <div class="section-content">${section.content || ''}</div>
+                    </section>
+                `;
+            }
+            return '';
+        })
+        .filter(s => s)
+        .join('');
     
     page.innerHTML = `
         <nav class="project-nav">
@@ -897,19 +1170,33 @@ function closeOverlay() {
 
 function nextImage() {
     const images = document.querySelectorAll('.carousel-image');
-    if (images.length === 0) return;
+    const navItems = document.querySelectorAll('.nav-carousel-item');
     
-    // Remove active class from current image
-    images[currentImageIndex].classList.remove('active');
-    
-    // Move to next image
-    currentImageIndex = (currentImageIndex + 1) % images.length;
-    
-    // Add active class to new image
-    images[currentImageIndex].classList.add('active');
-    
-    // Update nav carousel
-    updateNavCarousel();
+    // If we have main carousel images, use those (home page)
+    if (images.length > 0) {
+        // Remove active class from current image
+        images[currentImageIndex].classList.remove('active');
+        
+        // Move to next image
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        
+        // Add active class to new image
+        images[currentImageIndex].classList.add('active');
+        
+        // Update nav carousel
+        updateNavCarousel();
+    } 
+    // If we only have nav carousel items (other pages), cycle those
+    else if (navItems.length > 0) {
+        // Remove active class from current nav item
+        navItems[currentImageIndex].classList.remove('active');
+        
+        // Move to next image
+        currentImageIndex = (currentImageIndex + 1) % navItems.length;
+        
+        // Add active class to new nav item
+        navItems[currentImageIndex].classList.add('active');
+    }
     
     // Update search highlight with new image colors
     setTimeout(updateSearchHighlight, 100);
@@ -930,8 +1217,16 @@ function initNavCarousel() {
         navCarouselImage.appendChild(el);
     });
     
+    // Initialize currentImageIndex if not set
+    if (typeof currentImageIndex === 'undefined') {
+        currentImageIndex = 0;
+    }
+    
     navCarousel.addEventListener('click', () => {
-        document.getElementById('imageCarousel').scrollIntoView({ behavior: 'smooth' });
+        const mainCarousel = document.getElementById('imageCarousel');
+        if (mainCarousel) {
+            mainCarousel.scrollIntoView({ behavior: 'smooth' });
+        }
     });
 }
 
@@ -954,12 +1249,15 @@ function initScrollDetection() {
     const navCenter   = document.querySelector('.nav-center');
     const mainCar     = document.getElementById('imageCarousel');
     
-    // If there's no main carousel (other pages), show nav carousel always
+    // If there's no main carousel (other pages), show nav carousel always and start auto-play
     if (!mainCar) {
         if (navCarousel && navLinks && navCenter) {
             navCarousel.classList.add('active');
             navLinks.classList.add('carousel-active');
             navCenter.classList.add('has-carousel');
+            
+            // Start auto-play for nav carousel on pages without main carousel
+            startAutoPlay();
         }
         return;
     }
@@ -1226,10 +1524,16 @@ document.addEventListener('DOMContentLoaded', function() {
         initProjectsPageFilters();
         loadProjectsByYear();
         
+        // Initialize nav carousel for non-home pages
+        initNavCarousel();
+        
         // Add admin overlays if in admin mode (delay to ensure content is loaded)
         if (isAdminMode) {
             setTimeout(addAdminOverlays, 500);
         }
+    } else {
+        // For other pages (like detail.html), also initialize nav carousel
+        initNavCarousel();
     }
     
     // Set initial active nav state  
@@ -2048,7 +2352,10 @@ function createProjectCardForProjectsPage(project) {
     
     card.innerHTML = `
         <div class="project-image">
-            <span class="project-image-text">${project.category}</span>
+            ${project.card_image ? 
+                `<img src="${project.card_image}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: cover;">` : 
+                `<span class="project-image-text">${project.category}</span>`
+            }
         </div>
         <div class="project-content">
             <div class="project-header">
@@ -2143,6 +2450,37 @@ function initProjectsPageFilters() {
     if (yearFilter) {
         yearFilter.addEventListener('change', filterProjectsPage);
     }
+}
+
+// Code block copy functionality
+function copyCode(button) {
+    const codeBlock = button.closest('.code-block');
+    const codeContent = codeBlock.querySelector('code').textContent;
+    
+    navigator.clipboard.writeText(codeContent).then(() => {
+        const originalText = button.textContent;
+        button.textContent = 'Copied!';
+        button.style.color = 'var(--accent-green)';
+        
+        setTimeout(() => {
+            button.textContent = originalText;
+            button.style.color = '';
+        }, 2000);
+    }).catch(() => {
+        // Fallback for older browsers
+        const textArea = document.createElement('textarea');
+        textArea.value = codeContent;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+        
+        const originalText = button.textContent;
+        button.textContent = 'Copied!';
+        setTimeout(() => {
+            button.textContent = originalText;
+        }, 2000);
+    });
 }
 
 // Export for module usage

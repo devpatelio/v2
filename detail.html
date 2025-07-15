@@ -18,13 +18,21 @@
     <div class="nav-container">
       <div class="nav-left">
         <a href="index.html" class="logo-link">
-          <div class="logo-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.5"/>
-              <circle cx="12" cy="12" r="3" fill="currentColor"/>
-            </svg>
-          </div>
-          <span class="logo-text">Dev Patel</span>
+          <span class="logo-text">
+            <span class="nav-highlight">
+              <svg class="nav-highlight-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="navGrad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="var(--search-grad-start)"/>
+                    <stop offset="100%" stop-color="var(--search-grad-end)"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="12" cy="12" r="8" stroke="url(#navGrad)" stroke-width="1.5" fill="none"/>
+                <circle cx="12" cy="12" r="3" fill="url(#navGrad)"/>
+              </svg>
+              Dev Patel
+            </span>
+          </span>
         </a>
       </div>
 
@@ -72,14 +80,6 @@
     function qs(name) {
       return new URLSearchParams(window.location.search).get(name);
     }
-    function buildSection(sec) {
-      return `
-        <section class="section" id="${sec.id}">
-          <h2 class="section-title">${sec.title}</h2>
-          <div class="section-content">${sec.content}</div>
-        </section>
-      `;
-    }
 
     /* ---------- page bootstrap ---------- */
     document.addEventListener('DOMContentLoaded', () => {
@@ -104,13 +104,54 @@
         return;
       }
 
+      /* determine if using new simplified format or old complex format */
+      const sections = item.details?.sections || [];
+      const isNewFormat = sections.length > 0 && sections[0] && sections[0].hasOwnProperty('heading');
+      
       /* build sidebar contents list */
-      const contentsList = (item.details?.sections || [])
-        .map(s => `<li><a href="#${s.id}">${s.title}</a></li>`).join('');
+      const contentsList = sections
+        .filter(s => s && (s.heading || s.title)) // Filter out invalid sections
+        .map(s => {
+          if (isNewFormat && s.heading) {
+            const id = s.heading.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+            return `<li><a href="#${id}">${s.heading}</a></li>`;
+          } else if (!isNewFormat && s.id && s.title) {
+            return `<li><a href="#${s.id}">${s.title}</a></li>`;
+          }
+          return '';
+        })
+        .filter(s => s) // Remove empty strings
+        .join('');
 
-      /* build main sections */
-      const sectionsHTML = (item.details?.sections || [])
-        .map(buildSection).join('');
+      /* build sections based on format */
+      const sectionsHTML = sections
+        .filter(section => section && (section.heading || section.title)) // Filter out invalid sections
+        .map(section => {
+          if (isNewFormat && section.heading) {
+            // New simplified format
+            const id = section.heading.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+            return `
+              <section class="content-section" id="${id}">
+                <h2 class="section-heading">${section.heading}</h2>
+                <div class="section-text">${section.text || ''}</div>
+                ${section.images && section.images.length > 0 ? 
+                  section.images.map(img => `<img src="${img}" class="inline-image" alt="">`).join('') 
+                  : ''}
+              </section>
+            `;
+          } else if (!isNewFormat && section.id && section.title) {
+            // Old complex format
+            return `
+              <section class="section" id="${section.id}">
+                <h2 class="section-title">${section.title}</h2>
+                <div class="section-content">${section.content || ''}</div>
+              </section>
+            `;
+          }
+          return '';
+        })
+        .filter(s => s) // Remove empty strings
+        .join('');
 
       /* back-link target */
       const backHref = type === 'experience'
@@ -137,14 +178,23 @@
               <div class="info-item"><span class="info-label">Date</span><span class="info-value">${item.date || item.year}</span></div>
               <div class="info-item"><span class="info-label">Category</span><span class="info-value">${item.category}</span></div>
               <div class="info-item"><span class="info-label">Tools</span><span class="info-value">${item.tools}</span></div>
+              ${item.links && item.links.length > 0 ? `
+                <div class="info-item links-section">
+                  <span class="info-label">Links</span>
+                  <div class="info-value links-list">
+                    ${item.links.map(link => `<a href="${link.url}" target="_blank" class="project-link">${link.label}</a>`).join('')}
+                  </div>
+                </div>
+              ` : ''}
             </div>
 
-            <div class="contents"><h3>Contents</h3><ul class="contents-list">${contentsList}</ul></div>
+            ${contentsList ? `<div class="contents"><h3>Contents</h3><ul class="contents-list">${contentsList}</ul></div>` : ''}
           </aside>
 
           <main class="project-main">
-            <div class="hero-image">${item.logo}</div>
-            ${sectionsHTML || `<p class="section-content">${item.description}</p>`}
+            ${item.details?.cover_image ? `<img src="${item.details.cover_image}" class="cover-image" alt="${item.title} cover">` : 
+              (!isNewFormat ? `<div class="hero-image">${item.logo}</div>` : '')}
+            ${sectionsHTML || `<div class="section-text">${item.description}</div>`}
           </main>
         </div>
       `;
@@ -159,5 +209,17 @@
       });
     });
   </script>
+
+  <footer id="contact" class="footer">
+    <div class="contact-links">
+      <div class="contact-link-group">
+        <a href="mailto:dev.patel@berkeley.edu" class="contact-link">Email</a>
+        <a href="https://github.com/devpatelio" target="_blank" class="contact-link">GitHub</a>
+        <a href="https://linkedin.com/in/devpatelio" target="_blank" class="contact-link">LinkedIn</a>
+        <a href="https://x.com/devpatelio" target="_blank" class="contact-link">Twitter</a>
+      </div>
+      <div class="contact-search-message">Just search devpatelio :)</div>
+    </div>
+  </footer>
 </body>
 </html>

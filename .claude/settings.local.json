@@ -6,7 +6,9 @@
       "Bash(grep:*)",
       "Bash(rm:*)",
       "Bash(mv:*)",
-      "Bash(open:*)"
+      "Bash(open:*)",
+      "Bash(python3:*)",
+      "Bash(node:*)"
     ],
     "deny": []
   }
