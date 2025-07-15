@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Patel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+    <!-- Top Navigation -->
+    <nav class="top-nav" id="topNav">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo-link">
+                    <span class="logo-text">
+                        <span class="nav-highlight">
+                            <svg class="nav-highlight-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="navGrad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="var(--search-grad-start)"/>
+                                        <stop offset="100%" stop-color="var(--search-grad-end)"/>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="12" cy="12" r="8" stroke="url(#navGrad)" stroke-width="1.5" fill="none"/>
+                                <circle cx="12" cy="12" r="3" fill="url(#navGrad)"/>
+                            </svg>
+                            Dev Patel
+                        </span>
+                    </span>
+                </a>
+            </div>
+            
+            <div class="nav-center">
+                <!-- Mini carousel in nav bar -->
+                <div class="nav-carousel" id="navCarousel">
+                    <div class="nav-carousel-container">
+                        <div class="nav-carousel-image" id="navCarouselImage">
+                            <!-- Nav carousel image -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </div>
+            
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+                    <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                    <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="1.5" fill="currentColor"/>
+                    </svg>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-layout">
+        <main class="main-content" id="homeContent">
+            <header class="header">
+                <div class="header-content">
+                    <div class="profile-image">
+                        <img src="prof.png" alt="Dev Patel" class="profile-avatar">
+                    </div>
+                    <div class="header-text">
+                        <h1 class="name">Dev Patel</h1>
+                        <p class="subtitle">Software engineer building AI systems and digital products</p>
+                    </div>
+                </div>
+            </header>
+
+            <section id="about" class="about-section">
+                <p class="about-text">
+                    I'm a software engineer passionate about building intelligent systems that solve real-world problems. 
+                    Currently focused on AI/ML applications, distributed systems, and creating intuitive user experiences.
+                </p>
+                
+                <div class="image-carousel" id="imageCarousel">
+                    <div class="carousel-container">
+                        <div class="carousel-image-wrapper" id="carouselImageWrapper">
+                            <!-- Single image with fade transitions -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Full-screen image overlay -->
+                <div class="image-overlay" id="imageOverlay">
+                    <div class="overlay-content">
+                        <button class="overlay-close" id="overlayClose">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </button>
+                        <img class="overlay-image" id="overlayImage" src="" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="work-section">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="projects-container" id="experienceContainer">
+                    <!-- Work experiences will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <section id="work" class="work-section">
+                <h2 class="section-title">Selected Work</h2>
+                <div class="projects-container" id="projectsContainer">
+                    <!-- Projects will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <footer id="contact" class="footer">
+                <div class="contact-links">
+                    <div class="contact-link-group">
+                        <a href="mailto:dev.patel@berkeley.edu" class="contact-link">Email</a>
+                        <a href="https://github.com/devpatelio" target="_blank" class="contact-link">GitHub</a>
+                        <a href="https://linkedin.com/in/devpatelio" target="_blank" class="contact-link">LinkedIn</a>
+                        <a href="https://x.com/devpatelio" target="_blank" class="contact-link">Twitter</a>
+                    </div>
+                    <div class="contact-search-message">Just search devpatelio :)</div>
+                </div>
+            </footer>
+        </main>
+
+        <aside class="article-panel" id="articlePanel">
+            <div class="article-content" id="articleContent">
+                <!-- Article content will be dynamically inserted here -->
+            </div>
+        </aside>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
