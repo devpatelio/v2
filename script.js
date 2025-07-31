@@ -410,8 +410,8 @@ const experiences = [
         status: 'Current',
         location: 'San Jose, California',
         description: 'AI Software Developer on AIE NPU Engine Runtime and Vitis Compiler Team, working on next-generation AI acceleration hardware and software.',
-        tech: ['C++', 'CUDA', 'OpenCL', 'Python', 'Vitis HLS'],
-        tools: 'C++, CUDA, OpenCL, Python, Vitis HLS',
+        tech: ['C++', 'Redis', 'LLVM', 'MLIR', 'Python', 'Vitis HLS'],
+        tools: 'C++, Redis, LLVM, MLIR, OpenCL, Python, Vitis HLS',
         logo: 'AMD',
         card_image: 'https://pbs.twimg.com/media/DeDsacZXcAIgeEc.jpg',
         details: {
