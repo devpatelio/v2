@@ -141,50 +141,50 @@ const projects = [
         "logo": "UT",
         "card_image": "cover/unitrial.png",
         "details": {
-          "cover_image": "https://www.fightcancer.org/sites/default/files/National%20Images/Resources%20Graphics/Fig%2010%20Patient-facing%20Clinical%20Trial%20Matching%20150.jpg",
-          "subtitle": "Multi-modal RAG for clinical trial recruitment",
-          "type": "AI System",
-          "year": "2024",
-          "sections": [
-            {
-              "id": "inspiration",
-              "title": "Inspiration",
-              "content": "Drug discovery costs billions, with cancer and neurodegenerative trials facing a 97% failure rate. Patient recruitment is the biggest bottleneck for early-stage oncology trials, worsened by fragmented EHRs and local recruitment barriers. UniTrial aims to solve this with an AI-powered patient-trial matchmaker, using live ClinicalTrials.Gov data and patient EHRs to reduce recruitment time and improve outcomes."
-            },
-            {
-              "id": "overview",
-              "title": "What It Does",
-              "content": "The system takes patient EHR PDFs or condition prompts and matches them to suitable trials using a RAG pipeline with Mistral-7B, MED-BERT, and BGE embeddings. It uses a novel schema with FHIR and MESH IDs to reduce hallucinations. It features EHR de-identification, real-time updates, and dual visualizations for patients and CROs to search trials and patients securely."
-            },
-            {
-              "id": "technical",
-              "title": "How We Built It",
-              "content": "We preprocess EHRs, extract biomarkers, embed structured/unstructured data with MED-BERT/BGE, and store them in ChromaDB. Our custom REST API extends ClinicalTrials.gov queries. Vector similarity searches select top trial matches, minimizing hallucination. Langchain, Firebase, and Streamlit power the system, and future releases will add HIPAA-compliant patient data support."
-            },
-            {
-              "id": "business",
-              "title": "Business Model",
-              "content": "UniTrial’s revenue model includes subscriptions for CROs and value-based pricing for successful matches. Pharmaceutical sponsors can advertise trials for higher visibility, building a two-sided market moat. Our advantage is combining cutting-edge RAG AI with robust patient data pipelines."
-            },
-            {
-              "id": "challenges",
-              "title": "Challenges",
-              "content": "Key challenges included finding usable EHR datasets, aligning LLM output with our vector database, and reducing hallucination. Extensive cleaning and tuning helped refine the system."
-            },
-            {
-              "id": "impact",
-              "title": "Impact & Next Steps",
-              "content": "We’re proud to have reduced hallucination rates and built a robust patient-trial search system. Next, we’re adding real EHR clusters to enable patient-side recruitment and expanding disease areas. See our GitHub for live demos."
-            },
-            {
-              "id": "links",
-              "title": "Links",
-              "content": "[GitHub](https://github.com/devpatelio/unitrial)"
-            }
-          ]
+            "cover_image": "https://www.fightcancer.org/sites/default/files/National%20Images/Resources%20Graphics/Fig%2010%20Patient-facing%20Clinical%20Trial%20Matching%20150.jpg",
+            "subtitle": "Multi-modal RAG for clinical trial recruitment",
+            "type": "AI System",
+            "year": "2024",
+            "sections": [
+                {
+                    "id": "inspiration",
+                    "title": "Inspiration",
+                    "content": "Drug discovery costs billions, with cancer and neurodegenerative trials facing a 97% failure rate. Patient recruitment is the biggest bottleneck for early-stage oncology trials, worsened by fragmented EHRs and local recruitment barriers. UniTrial aims to solve this with an AI-powered patient-trial matchmaker, using live ClinicalTrials.Gov data and patient EHRs to reduce recruitment time and improve outcomes."
+                },
+                {
+                    "id": "overview",
+                    "title": "What It Does",
+                    "content": "The system takes patient EHR PDFs or condition prompts and matches them to suitable trials using a RAG pipeline with Mistral-7B, MED-BERT, and BGE embeddings. It uses a novel schema with FHIR and MESH IDs to reduce hallucinations. It features EHR de-identification, real-time updates, and dual visualizations for patients and CROs to search trials and patients securely."
+                },
+                {
+                    "id": "technical",
+                    "title": "How We Built It",
+                    "content": "We preprocess EHRs, extract biomarkers, embed structured/unstructured data with MED-BERT/BGE, and store them in ChromaDB. Our custom REST API extends ClinicalTrials.gov queries. Vector similarity searches select top trial matches, minimizing hallucination. Langchain, Firebase, and Streamlit power the system, and future releases will add HIPAA-compliant patient data support."
+                },
+                {
+                    "id": "business",
+                    "title": "Business Model",
+                    "content": "UniTrial’s revenue model includes subscriptions for CROs and value-based pricing for successful matches. Pharmaceutical sponsors can advertise trials for higher visibility, building a two-sided market moat. Our advantage is combining cutting-edge RAG AI with robust patient data pipelines."
+                },
+                {
+                    "id": "challenges",
+                    "title": "Challenges",
+                    "content": "Key challenges included finding usable EHR datasets, aligning LLM output with our vector database, and reducing hallucination. Extensive cleaning and tuning helped refine the system."
+                },
+                {
+                    "id": "impact",
+                    "title": "Impact & Next Steps",
+                    "content": "We’re proud to have reduced hallucination rates and built a robust patient-trial search system. Next, we’re adding real EHR clusters to enable patient-side recruitment and expanding disease areas. See our GitHub for live demos."
+                },
+                {
+                    "id": "links",
+                    "title": "Links",
+                    "content": "[GitHub](https://github.com/devpatelio/unitrial)"
+                }
+            ]
         }
-      },
-      {
+    },
+    {
         "id": "bluesky",
         "title": "Project BlueSky: Multimodal Mental Health Patient Monitoring",
         "year": "2023",
@@ -198,55 +198,55 @@ const projects = [
         "logo": "BS",
         "card_image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*YMQ1a_N6iDDiEtXq7HV7iw.png",
         "details": {
-          "cover_image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*Nkm1m0lOCq76jC-mtG3Qwg.png",
-          "subtitle": "Multimodal deep learning for mental health monitoring",
-          "type": "AI System",
-          "year": "2023",
-          "sections": [
-            {
-              "id": "inspiration",
-              "title": "Inspiration",
-              "content": "Mental health care access remains a global crisis, with 70% of individuals receiving no treatment and many others lacking personalized care. Project BlueSky was inspired by the need to create emotionally intelligent systems that go beyond chatbots and understand the nuances of human speech, tone, and expression."
-            },
-            {
-              "id": "overview",
-              "title": "Overview",
-              "content": "BlueSky uses deep learning to analyze facial expressions, speech tone, and spoken text to identify emotional patterns and psychological triggers. By capturing mood and sentiment across multiple modalities, it offers a robust patient profile that can assist mental health professionals or users themselves."
-            },
-            {
-              "id": "voice",
-              "title": "Voice & Audio Pipeline",
-              "content": "Audio data is preprocessed using Mel-Frequency Cepstral Coefficients (MFCCs), spectrograms, and LSTM networks to model time-series emotion. Speech-to-text is performed using a DeepSpeech2-inspired model that feeds audio through convolutional layers and gated recurrent units to transcribe speech while retaining emotional cues."
-            },
-            {
-              "id": "face",
-              "title": "Facial Sentiment Pipeline",
-              "content": "Facial sentiment is detected using Haar Cascades for face localization and 68-point landmark detection to model emotions through spatial geometry. A CNN-based classifier complements this with pixel-level emotion recognition, offering redundancy and improving prediction confidence in real time."
-            },
-            {
-              "id": "nlp",
-              "title": "Conversation & NLP",
-              "content": "Using ASR output, the system applies PoS tagging, Named Entity Recognition (NER), and key-phrase extraction using a BiLSTM-CRF architecture. This helps map specific phrases to emotional shifts, enabling the system to surface potentially meaningful or concerning thoughts within a user's narrative."
-            },
-            {
-              "id": "tech-stack",
-              "title": "Technical Stack",
-              "content": "Core models were built in PyTorch and OpenCV. DeepSpeech2 and MFCC pipelines powered audio, Haar Cascades and CNNs enabled facial analysis, and NLTK and CRF models handled NLP. Pretrained models improved low-data generalization."
-            },
-            {
-              "id": "impact",
-              "title": "Impact & Purpose",
-              "content": "BlueSky bridges the gap between machines and mental health support. It aims not to replace therapists, but to provide better tools for understanding patient emotions and context, creating a more compassionate and data-rich foundation for care."
-            },
-            {
-              "id": "links",
-              "title": "Read More",
-              "content": "https://ai.plainenglish.io/we-can-do-better-than-chat-bots-for-mental-health-9979b875e55e"
-            }
-          ]
+            "cover_image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*Nkm1m0lOCq76jC-mtG3Qwg.png",
+            "subtitle": "Multimodal deep learning for mental health monitoring",
+            "type": "AI System",
+            "year": "2023",
+            "sections": [
+                {
+                    "id": "inspiration",
+                    "title": "Inspiration",
+                    "content": "Mental health care access remains a global crisis, with 70% of individuals receiving no treatment and many others lacking personalized care. Project BlueSky was inspired by the need to create emotionally intelligent systems that go beyond chatbots and understand the nuances of human speech, tone, and expression."
+                },
+                {
+                    "id": "overview",
+                    "title": "Overview",
+                    "content": "BlueSky uses deep learning to analyze facial expressions, speech tone, and spoken text to identify emotional patterns and psychological triggers. By capturing mood and sentiment across multiple modalities, it offers a robust patient profile that can assist mental health professionals or users themselves."
+                },
+                {
+                    "id": "voice",
+                    "title": "Voice & Audio Pipeline",
+                    "content": "Audio data is preprocessed using Mel-Frequency Cepstral Coefficients (MFCCs), spectrograms, and LSTM networks to model time-series emotion. Speech-to-text is performed using a DeepSpeech2-inspired model that feeds audio through convolutional layers and gated recurrent units to transcribe speech while retaining emotional cues."
+                },
+                {
+                    "id": "face",
+                    "title": "Facial Sentiment Pipeline",
+                    "content": "Facial sentiment is detected using Haar Cascades for face localization and 68-point landmark detection to model emotions through spatial geometry. A CNN-based classifier complements this with pixel-level emotion recognition, offering redundancy and improving prediction confidence in real time."
+                },
+                {
+                    "id": "nlp",
+                    "title": "Conversation & NLP",
+                    "content": "Using ASR output, the system applies PoS tagging, Named Entity Recognition (NER), and key-phrase extraction using a BiLSTM-CRF architecture. This helps map specific phrases to emotional shifts, enabling the system to surface potentially meaningful or concerning thoughts within a user's narrative."
+                },
+                {
+                    "id": "tech-stack",
+                    "title": "Technical Stack",
+                    "content": "Core models were built in PyTorch and OpenCV. DeepSpeech2 and MFCC pipelines powered audio, Haar Cascades and CNNs enabled facial analysis, and NLTK and CRF models handled NLP. Pretrained models improved low-data generalization."
+                },
+                {
+                    "id": "impact",
+                    "title": "Impact & Purpose",
+                    "content": "BlueSky bridges the gap between machines and mental health support. It aims not to replace therapists, but to provide better tools for understanding patient emotions and context, creating a more compassionate and data-rich foundation for care."
+                },
+                {
+                    "id": "links",
+                    "title": "Read More",
+                    "content": "https://ai.plainenglish.io/we-can-do-better-than-chat-bots-for-mental-health-9979b875e55e"
+                }
+            ]
         }
-      },
-      {
+    },
+    {
         "id": "rolodex",
         "title": "Rolodex: External Memory for Dementia Patients",
         "year": "2023",
@@ -260,39 +260,39 @@ const projects = [
         "logo": "RX",
         "card_image": "cover/glasses.png",
         "details": {
-        "cover_image": "cover/rolodex.png",
-          "subtitle": "Wearable memory augmentation for dementia",
-          "type": "Hardware + AI Prototype",
-          "year": "2024",
-          "sections": [
-            {
-              "id": "inspiration",
-              "title": "Inspiration",
-              "content": "Dementia and Alzheimer's patients often struggle to remember loved ones and their relationships, which can be emotionally challenging. Rolodex was inspired by the idea of giving patients a gentle external memory system to help them stay connected."
-            },
-            {
-              "id": "overview",
-              "title": "What It Does",
-              "content": "With Brilliant Labs Frame Glasses, users can tap to start recording conversations. The glasses capture short interactions, transcribe speech, and store them with timestamps and face snapshots. This creates a living memory bank linked to the people in their lives."
-            },
-            {
-              "id": "pipeline",
-              "title": "How It Works",
-              "content": "Captured audio is transcribed with an ASR model (Whisper). Frames from the glasses camera are processed with FaceNet for facial embeddings. These embeddings are cross-referenced with the user’s personal 'Rolodex' — a database of known faces, relationship tags, and context notes. Users can later search conversations and view memory logs by person or relationship."
-            },
-            {
-              "id": "interaction",
-              "title": "User Experience",
-              "content": "Tap to start or stop conversations. The system updates memory profiles in real-time. Users or caregivers can add notes, context, or photos to strengthen associations. The chat-based interface helps patients retrieve ‘who was this?’ and ‘what did we talk about?’ moments easily."
-            },
-            {
-              "id": "impact",
-              "title": "Impact & Next Steps",
-              "content": "Rolodex aims to reduce anxiety and loneliness for dementia patients by augmenting their memory in a private, user-controlled way. Next steps include improving face matching, real-time processing, and integrating with clinical care routines for wider adoption."
-            }
-          ]
+            "cover_image": "cover/rolodex.png",
+            "subtitle": "Wearable memory augmentation for dementia",
+            "type": "Hardware + AI Prototype",
+            "year": "2024",
+            "sections": [
+                {
+                    "id": "inspiration",
+                    "title": "Inspiration",
+                    "content": "Dementia and Alzheimer's patients often struggle to remember loved ones and their relationships, which can be emotionally challenging. Rolodex was inspired by the idea of giving patients a gentle external memory system to help them stay connected."
+                },
+                {
+                    "id": "overview",
+                    "title": "What It Does",
+                    "content": "With Brilliant Labs Frame Glasses, users can tap to start recording conversations. The glasses capture short interactions, transcribe speech, and store them with timestamps and face snapshots. This creates a living memory bank linked to the people in their lives."
+                },
+                {
+                    "id": "pipeline",
+                    "title": "How It Works",
+                    "content": "Captured audio is transcribed with an ASR model (Whisper). Frames from the glasses camera are processed with FaceNet for facial embeddings. These embeddings are cross-referenced with the user’s personal 'Rolodex' — a database of known faces, relationship tags, and context notes. Users can later search conversations and view memory logs by person or relationship."
+                },
+                {
+                    "id": "interaction",
+                    "title": "User Experience",
+                    "content": "Tap to start or stop conversations. The system updates memory profiles in real-time. Users or caregivers can add notes, context, or photos to strengthen associations. The chat-based interface helps patients retrieve ‘who was this?’ and ‘what did we talk about?’ moments easily."
+                },
+                {
+                    "id": "impact",
+                    "title": "Impact & Next Steps",
+                    "content": "Rolodex aims to reduce anxiety and loneliness for dementia patients by augmenting their memory in a private, user-controlled way. Next steps include improving face matching, real-time processing, and integrating with clinical care routines for wider adoption."
+                }
+            ]
         }
-      },    
+    },
     {
         "id": "pyr-health",
         "title": "PYR Health: Microfluidic Device for Remote Blood Counts",
@@ -307,45 +307,45 @@ const projects = [
         "logo": "PYR",
         "card_image": "cover/pyr_card.png",
         "details": {
-          "cover_image": "cover/pyr_cover.png",
-          "subtitle": "Low-cost CBC monitoring for chemotherapy patients",
-          "type": "Bioengineering Project",
-          "year": "2023",
-          "sections": [
-            {
-              "id": "problem",
-              "title": "Problem Statement",
-              "content": "Cancer’s high mortality rates are partly due to chemotherapy’s severe side effects and poor monitoring in resource-limited settings. Standard CBC tests are costly, require large equipment, and are inaccessible for many, leading to avoidable complications and treatment delays."
-            },
-            {
-              "id": "background",
-              "title": "Background",
-              "content": "Chemotherapy-induced anemia, neutropenia, and platelet deficiencies can be fatal if unmonitored. Yet, existing monitoring systems are expensive and infrequent, especially in developing regions where cancer mortality is up to 1000% higher than in developed nations."
-            },
-            {
-              "id": "solution",
-              "title": "Solution",
-              "content": "PYR Health proposes a portable, low-cost microfluidic device that prepares blood samples automatically. A vision transformer and YoloV8 pipeline processes blood smears for real-time WBC, RBC, and platelet counts. This empowers continuous monitoring, integrates with physician workflows, and provides detailed cell morphology data."
-            },
-            {
-              "id": "technical",
-              "title": "Technical Pipeline",
-              "content": "Custom chip design automates sample prep. The microscope apparatus captures images, which a ViT processes for cell classification. Ensemble models like Random Forest validate cytotoxicity risks with 85% accuracy, improving dosing decisions."
-            },
-            {
-              "id": "impact",
-              "title": "Impact & Vision",
-              "content": "Enables outpatient chemotherapy monitoring, lowering hospital costs and improving patient survival by avoiding toxicity-related delays. Finalist at UC Big Ideas. Long-term vision: scalable, affordable CBC diagnostics for underserved regions."
-            },
-            {
-              "id": "links",
-              "title": "Links",
-              "content": "[Read More](https://docs.google.com/document/d/1gKT-vwVgJ1WBZjoQ3S6IHzCznSWmHcdrbjg12vnIwdA/edit?usp=sharing)"
-            }
-          ]
+            "cover_image": "cover/pyr_cover.png",
+            "subtitle": "Low-cost CBC monitoring for chemotherapy patients",
+            "type": "Bioengineering Project",
+            "year": "2023",
+            "sections": [
+                {
+                    "id": "problem",
+                    "title": "Problem Statement",
+                    "content": "Cancer’s high mortality rates are partly due to chemotherapy’s severe side effects and poor monitoring in resource-limited settings. Standard CBC tests are costly, require large equipment, and are inaccessible for many, leading to avoidable complications and treatment delays."
+                },
+                {
+                    "id": "background",
+                    "title": "Background",
+                    "content": "Chemotherapy-induced anemia, neutropenia, and platelet deficiencies can be fatal if unmonitored. Yet, existing monitoring systems are expensive and infrequent, especially in developing regions where cancer mortality is up to 1000% higher than in developed nations."
+                },
+                {
+                    "id": "solution",
+                    "title": "Solution",
+                    "content": "PYR Health proposes a portable, low-cost microfluidic device that prepares blood samples automatically. A vision transformer and YoloV8 pipeline processes blood smears for real-time WBC, RBC, and platelet counts. This empowers continuous monitoring, integrates with physician workflows, and provides detailed cell morphology data."
+                },
+                {
+                    "id": "technical",
+                    "title": "Technical Pipeline",
+                    "content": "Custom chip design automates sample prep. The microscope apparatus captures images, which a ViT processes for cell classification. Ensemble models like Random Forest validate cytotoxicity risks with 85% accuracy, improving dosing decisions."
+                },
+                {
+                    "id": "impact",
+                    "title": "Impact & Vision",
+                    "content": "Enables outpatient chemotherapy monitoring, lowering hospital costs and improving patient survival by avoiding toxicity-related delays. Finalist at UC Big Ideas. Long-term vision: scalable, affordable CBC diagnostics for underserved regions."
+                },
+                {
+                    "id": "links",
+                    "title": "Links",
+                    "content": "[Read More](https://docs.google.com/document/d/1gKT-vwVgJ1WBZjoQ3S6IHzCznSWmHcdrbjg12vnIwdA/edit?usp=sharing)"
+                }
+            ]
         }
-      },
-      {
+    },
+    {
         "id": "alzheimers-druggability",
         "title": "Alzheimer’s Genome Variant and Druggability Project",
         "year": "2022",
@@ -359,44 +359,44 @@ const projects = [
         "logo": "AD",
         "card_image": "cover/NGV_hunters_logo.png",
         "details": {
-          "cover_image": "https://user-images.githubusercontent.com/11878969/149540648-551f283d-c2fb-434f-9dac-e94540eb023c.png",
-          "subtitle": "Drug repurposing for Alzheimer’s and Motor Neuron Disease using genomics",
-          "type": "Research Project",
-          "year": "2022",
-          "sections": [
-            {
-              "id": "inspiration",
-              "title": "Inspiration",
-              "content": "Motor neurone diseases (like ALS) have a complex genetic architecture. New GWAS findings revealed multiple risk loci, offering a path to discover novel drug targets and repurpose existing compounds for neurodegenerative disease longevity."
-            },
-            {
-              "id": "aims",
-              "title": "Project Aims",
-              "content": "Our team (NGV Hunters) focused on three goals: (1) Explore genetic variation linked to ALS, (2) use Mendelian Randomization to infer causal links between variants and disease, and (3) build a drug discovery pipeline for druggable targets."
-            },
-            {
-              "id": "pipeline",
-              "title": "Pipeline",
-              "content": "We processed variant data with VEP and BCFtools, ran Mendelian Randomization scatter plots to estimate SNP effects, and conducted funnel plot analyses to validate instruments. For drug discovery, we mapped causal genes to ChemBL and drug-protein interaction datasets to rank therapeutic candidates."
-            },
-            {
-              "id": "results",
-              "title": "Results & Impact",
-              "content": "The pipeline identified novel ALS gene targets with high druggability scores. We extended the analysis to pathway and transmembrane region enrichment, highlighting actionable nodes for future pre-clinical studies."
-            },
-            {
-              "id": "awards",
-              "title": "Awards",
-              "content": "Won 1st place in the UK’s DEMON Dementia Network Neurohack Challenge, receiving a $10K research grant for continued work on Alzheimer’s and motor neurone disease drug repurposing."
-            },
-            {
-              "id": "links",
-              "title": "Project Resources",
-              "content": "[GitHub Repo](https://github.com/devpatelio/Neurohack-C3-LA-Solution)"
-            }
-          ]
+            "cover_image": "https://user-images.githubusercontent.com/11878969/149540648-551f283d-c2fb-434f-9dac-e94540eb023c.png",
+            "subtitle": "Drug repurposing for Alzheimer’s and Motor Neuron Disease using genomics",
+            "type": "Research Project",
+            "year": "2022",
+            "sections": [
+                {
+                    "id": "inspiration",
+                    "title": "Inspiration",
+                    "content": "Motor neurone diseases (like ALS) have a complex genetic architecture. New GWAS findings revealed multiple risk loci, offering a path to discover novel drug targets and repurpose existing compounds for neurodegenerative disease longevity."
+                },
+                {
+                    "id": "aims",
+                    "title": "Project Aims",
+                    "content": "Our team (NGV Hunters) focused on three goals: (1) Explore genetic variation linked to ALS, (2) use Mendelian Randomization to infer causal links between variants and disease, and (3) build a drug discovery pipeline for druggable targets."
+                },
+                {
+                    "id": "pipeline",
+                    "title": "Pipeline",
+                    "content": "We processed variant data with VEP and BCFtools, ran Mendelian Randomization scatter plots to estimate SNP effects, and conducted funnel plot analyses to validate instruments. For drug discovery, we mapped causal genes to ChemBL and drug-protein interaction datasets to rank therapeutic candidates."
+                },
+                {
+                    "id": "results",
+                    "title": "Results & Impact",
+                    "content": "The pipeline identified novel ALS gene targets with high druggability scores. We extended the analysis to pathway and transmembrane region enrichment, highlighting actionable nodes for future pre-clinical studies."
+                },
+                {
+                    "id": "awards",
+                    "title": "Awards",
+                    "content": "Won 1st place in the UK’s DEMON Dementia Network Neurohack Challenge, receiving a $10K research grant for continued work on Alzheimer’s and motor neurone disease drug repurposing."
+                },
+                {
+                    "id": "links",
+                    "title": "Project Resources",
+                    "content": "[GitHub Repo](https://github.com/devpatelio/Neurohack-C3-LA-Solution)"
+                }
+            ]
         }
-      }      
+    }
 ];
 
 // Work experience data
@@ -410,30 +410,55 @@ const experiences = [
         status: 'Current',
         location: 'San Jose, California',
         description: 'AI Software Developer on AIE NPU Engine Runtime and Vitis Compiler Team, working on next-generation AI acceleration hardware and software.',
-        tech: ['C++', 'CUDA', 'OpenCL', 'Python', 'Vitis HLS'],
-        tools: 'C++, CUDA, OpenCL, Python, Vitis HLS',
+        tech: ['C++', 'Redis', 'LLVM', 'MLIR', 'Python', 'Vitis HLS'],
+        tools: 'C++, Redis, LLVM, MLIR, OpenCL, Python, Vitis HLS',
         logo: 'AMD',
         card_image: 'https://pbs.twimg.com/media/DeDsacZXcAIgeEc.jpg',
         details: {
             cover_image: 'cover/rai2.png',
-            subtitle: 'AI Software Developer',
-            type: 'Full-time',
+            subtitle: 'AI Software Developer Intern',
+            type: 'Internship',
             year: '2025',
             sections: [
                 {
+                    id: 'introduction',
+                    title: 'Embarking on My AMD Journey',
+                    content: 'When I began my internship at AMD in the summer of 2025, I entered with curiosity and limited prior knowledge about Neural Processing Units (NPUs). However, I quickly embraced the challenges, diving deep into AMD’s innovative Ryzen AI dataflow architecture. I gained hands-on experience and became comfortable with its unique intricacies, appreciating how software intricately drives hardware acceleration for edge AI workloads.'
+                },
+                {
                     id: 'overview',
-                    title: 'Role Overview',
-                    content: 'Working on AMD\'s AIE NPU Engine Runtime and Vitis Compiler Team to develop cutting-edge AI acceleration solutions. Focus on optimizing neural network inference on AMD\'s adaptive compute acceleration platform (ACAP) and neural processing units (NPUs).'
+                    title: 'My Role and Goals',
+                    content: 'At AMD, I joined the AI Compiler and Heterogeneous Computing team, where my primary objective was to design and deploy compiler optimizations to significantly enhance edge ML inference performance on the Ryzen AI NPU. Leveraging LLVM to accelerate deep learning kernels and compute graphs, my contributions directly improved key components such as FlexML and VitisAI, essential tools within AMD’s AI Engine compiler ecosystem.'
                 },
                 {
-                    id: 'technical',
-                    title: 'Technical Contributions',
-                    content: 'Developing runtime optimization strategies for AI workloads on AMD hardware. Contributing to the Vitis compiler stack for efficient mapping of ML models to heterogeneous compute resources. Implementing low-level kernels and drivers for NPU acceleration with focus on performance and power efficiency.'
+                    id: 'deep-dive-benchmarking-platform',
+                    title: 'Creating a Comprehensive Benchmarking Platform',
+                    content: 'One of the central projects during my internship was the creation of an internal microbenchmarking suite designed to systematically analyze runtime performance and memory utilization of ONNX models on AMD’s AIE hardware. Recognizing a significant gap in existing tools that only provided layer-level insights, I developed a command-line tool enabling detailed parameter sweeps across various dimensions, datatypes (FP32, Quantized INT8), and compilation flags. This system was designed to capture granular operator-level runtime data, identifying performance bottlenecks previously hidden by higher-level analyses. By providing comprehensive visualizations through an intuitive dashboard, our team could effectively interpret complex datasets, improving efficiency and decision-making.'
                 },
                 {
-                    id: 'impact',
-                    title: 'Current Projects',
-                    content: 'Leading development of novel optimization techniques for transformer model inference on NPU hardware. Collaborating with hardware teams to co-design software-hardware solutions for next-generation AI acceleration. Contributing to AMD\'s strategic AI software ecosystem and developer tools.'
+                    id: 'integration-pytorch-onnx',
+                    title: 'Integrating PyTorch, ONNX, and Low-Level Optimizations',
+                    content: 'To further enhance AI workflows at AMD, I focused heavily on integrating PyTorch and ONNX models with robust low-level system optimizations in C++. This involved sophisticated multi-threading strategies, memory management techniques, redis-based job execution, and direct hardware acceleration. By tackling critical issues such as L2-L3 memory bottlenecks and CPU core stalls, my optimizations yielded up to 40× performance improvements, significantly enhancing operator execution speeds and efficiency in complex parameter sweeps.'
+                },
+                {
+                    id: 'hardware-tracing-system',
+                    title: 'Advanced Hardware Tracing and Analysis',
+                    content: 'Understanding hardware-level details was crucial for optimizing performance. Therefore, I implemented a detailed hardware tracing system integrated with a remote Windows VM via automated SSH-based workflows. This enabled the precise capture and analysis of hardware performance data, including cycle measurements and resource utilization. By systematically managing trace configurations and using automated batch scripts, our team gained unprecedented insights into hardware behavior, guiding further compiler and kernel optimizations.'
+                },
+                {
+                    id: 'task-management-resource-handling',
+                    title: 'Efficient Task Management and Resource Handling',
+                    content: 'To manage the intensive benchmarking processes efficiently, I developed a distributed task execution framework using Celery with Redis backend support. This system provided robust task queuing, real-time asynchronous tracking, and detailed error handling. It ensured optimal hardware utilization through NPU resource locking and prioritized job execution, significantly improving operational efficiency and enabling extensive parallel compilation across multiple cores.'
+                },
+                {
+                    id: 'learnings-reflections',
+                    title: 'Learnings and Reflections',
+                    content: 'This internship at AMD was profoundly educational, enhancing both my technical knowledge and practical engineering skills. Through hands-on experience with the AI Engine architecture, I learned deeply about Very Long Instruction Word (VLIW), Single Instruction Multiple Data (SIMD) processing, and the critical importance of efficient data movement and memory management in heterogeneous systems. Furthermore, engaging with complex debugging scenarios and iterative optimization cycles underscored the value of structured, scalable benchmarking and performance analysis tools. This experience solidified my passion for hardware-software co-design and laid the groundwork for my future aspirations in pushing technological boundaries in AI.'
+                },
+                {
+                    id: 'future-directions',
+                    title: 'Future Directions',
+                    content: 'Moving forward, I aim to enhance the benchmarking suite by incorporating more sophisticated data compression and storage methodologies, and potentially integrating it within broader AMD workflows. This will improve accessibility and scalability, ensuring that the insights and optimizations developed during my internship will continue to benefit AMD’s future AI hardware developments and broader software ecosystem.'
                 }
             ]
         }
@@ -700,11 +725,11 @@ function toggleTheme() {
 // Navigation management
 function initNavigation() {
     const navLinks = document.querySelectorAll('.nav-link');
-    
+
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             const href = link.getAttribute('href');
-            
+
             // If it's a hash link on the same page, handle smooth scrolling
             if (href.startsWith('#')) {
                 e.preventDefault();
@@ -729,18 +754,18 @@ function shouldShowSplitPane() {
 function createProjectCard(item) {
     const card = document.createElement('div');
     card.className = 'project-card';
-    
+
     // Use unified detail.html system for all content
     const isExp = experiences.some(e => e.id === item.id);
-    const linkUrl = `detail.html?type=${isExp ? 'experience' : 'project'}&id=${item.id}`;  
+    const linkUrl = `detail.html?type=${isExp ? 'experience' : 'project'}&id=${item.id}`;
     card.onclick = () => window.location.href = linkUrl;
-    
+
     card.innerHTML = `
         <div class="project-image">
-            ${item.card_image ? 
-                `<img src="${item.card_image}" alt="${item.title}" style="width: 100%; height: 100%; object-fit: cover;">` : 
-                `<span class="project-image-text">${item.category}</span>`
-            }
+            ${item.card_image ?
+            `<img src="${item.card_image}" alt="${item.title}" style="width: 100%; height: 100%; object-fit: cover;">` :
+            `<span class="project-image-text">${item.category}</span>`
+        }
         </div>
         <div class="project-content">
             <div class="project-header">
@@ -753,7 +778,7 @@ function createProjectCard(item) {
             </div>
         </div>
     `;
-    
+
     return card;
 }
 
@@ -762,7 +787,7 @@ function createProjectListItem(project) {
     const item = document.createElement('div');
     item.className = 'project-list-item';
     item.onclick = () => openProject(project);
-    
+
     item.innerHTML = `
         <div class="project-logo">${project.logo}</div>
         <div class="project-info">
@@ -776,7 +801,7 @@ function createProjectListItem(project) {
             </div>
         </div>
     `;
-    
+
     return item;
 }
 
@@ -799,7 +824,7 @@ function showProjectInPanel(item) {
     // Build sections HTML - use unified format detection like detail.html
     const sections = item.details?.sections || [];
     const isNewFormat = sections.length > 0 && sections[0] && sections[0].hasOwnProperty('heading');
-    
+
     const sectionsHTML = sections
         .filter(section => section && (section.heading || section.title)) // Filter out invalid sections
         .map(section => {
@@ -809,9 +834,9 @@ function showProjectInPanel(item) {
                     <div class="article-section">
                         <h3 class="article-section-title">${section.heading}</h3>
                         <div class="article-section-content">${section.text || ''}</div>
-                        ${section.images && section.images.length > 0 ? 
-                            section.images.map(img => `<img src="${img}" class="inline-image" alt="" style="max-width: 100%; margin: 1rem 0; border-radius: 8px;">`).join('') 
-                            : ''}
+                        ${section.images && section.images.length > 0 ?
+                        section.images.map(img => `<img src="${img}" class="inline-image" alt="" style="max-width: 100%; margin: 1rem 0; border-radius: 8px;">`).join('')
+                        : ''}
                     </div>
                 `;
             } else if (!isNewFormat && section.id && section.title) {
@@ -864,10 +889,10 @@ function showProjectInPanel(item) {
             </div>
         </div>
         <div class="article-hero-image">
-            ${item.details?.cover_image ? 
-                `<img src="${item.details.cover_image}" alt="${item.title} cover" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">` : 
-                item.logo
-            }
+            ${item.details?.cover_image ?
+            `<img src="${item.details.cover_image}" alt="${item.title} cover" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">` :
+            item.logo
+        }
         </div>
         ${sectionsHTML}
     `;
@@ -883,11 +908,11 @@ function createProjectPage(project) {
     const page = document.createElement('div');
     page.className = 'project-page';
     page.id = `project-${project.id}`;
-    
+
     // Use unified format detection like detail.html and showProjectInPanel
     const sections = project.details?.sections || [];
     const isNewFormat = sections.length > 0 && sections[0] && sections[0].hasOwnProperty('heading');
-    
+
     const contentsList = sections
         .filter(section => section && (section.heading || section.title))
         .map(section => {
@@ -901,7 +926,7 @@ function createProjectPage(project) {
         })
         .filter(s => s)
         .join('');
-    
+
     const sectionsHTML = sections
         .filter(section => section && (section.heading || section.title))
         .map(section => {
@@ -911,9 +936,9 @@ function createProjectPage(project) {
                     <section class="section" id="${id}">
                         <h2 class="section-title">${section.heading}</h2>
                         <div class="section-content">${section.text || ''}</div>
-                        ${section.images && section.images.length > 0 ? 
-                            section.images.map(img => `<img src="${img}" class="inline-image" alt="" style="max-width: 100%; margin: 1rem 0; border-radius: 8px;">`).join('') 
-                            : ''}
+                        ${section.images && section.images.length > 0 ?
+                        section.images.map(img => `<img src="${img}" class="inline-image" alt="" style="max-width: 100%; margin: 1rem 0; border-radius: 8px;">`).join('')
+                        : ''}
                     </section>
                 `;
             } else if (!isNewFormat && section.id && section.title) {
@@ -928,7 +953,7 @@ function createProjectPage(project) {
         })
         .filter(s => s)
         .join('');
-    
+
     page.innerHTML = `
         <nav class="project-nav">
             <a href="#" class="back-link" onclick="closeProject()">
@@ -982,28 +1007,28 @@ function createProjectPage(project) {
             </main>
         </div>
     `;
-    
+
     return page;
 }
 
 // Open project (full page)
 function openProject(project) {
     currentProject = project;
-    
+
     // Hide current content
     if (currentPage === 'home') {
         document.querySelector('.main-layout').style.display = 'none';
     } else if (currentPage === 'projects') {
         document.getElementById('projectsPage').style.display = 'none';
     }
-    
+
     // Show or create project page
     let projectPage = document.getElementById(`project-${project.id}`);
     if (!projectPage) {
         projectPage = createProjectPage(project);
         document.body.appendChild(projectPage);
     }
-    
+
     projectPage.classList.add('active');
     window.scrollTo(0, 0);
 }
@@ -1012,18 +1037,18 @@ function openProject(project) {
 function closeProject() {
     if (currentProject) {
         const projectPage = document.getElementById(`project-${currentProject.id}`);
-        
+
         if (projectPage) {
             projectPage.classList.remove('active');
         }
-        
+
         // Show appropriate content
         if (currentPage === 'home') {
             document.querySelector('.main-layout').style.display = 'flex';
         } else if (currentPage === 'projects') {
             document.getElementById('projectsPage').style.display = 'block';
         }
-        
+
         currentProject = null;
         window.scrollTo(0, 0);
     }
@@ -1050,19 +1075,19 @@ function filterProjects() {
     const checkedStatuses = Array.from(document.querySelectorAll('input[value*="Completed"], input[value*="Progress"]'))
         .filter(input => input.checked)
         .map(input => input.value);
-    
+
     filteredProjects = projects.filter(project => {
         const matchesSearch = project.title.toLowerCase().includes(searchTerm) ||
-                            project.description.toLowerCase().includes(searchTerm) ||
-                            project.tech.some(tech => tech.toLowerCase().includes(searchTerm));
-        
+            project.description.toLowerCase().includes(searchTerm) ||
+            project.tech.some(tech => tech.toLowerCase().includes(searchTerm));
+
         const matchesCategory = checkedCategories.length === 0 || checkedCategories.includes(project.category);
         const matchesYear = checkedYears.length === 0 || checkedYears.includes(project.year);
         const matchesStatus = checkedStatuses.length === 0 || checkedStatuses.includes(project.status);
-        
+
         return matchesSearch && matchesCategory && matchesYear && matchesStatus;
     });
-    
+
     loadProjectsList();
 }
 
@@ -1072,7 +1097,7 @@ const everything = [...projects, ...experiences];
 function loadProjects() {
     const container = document.getElementById('projectsContainer');
     if (!container) return;
-    
+
     container.innerHTML = '';
     projects.forEach(project => {
         const card = createProjectCard(project);
@@ -1085,9 +1110,9 @@ function loadProjects() {
 function loadExperiences() {
     const container = document.getElementById('experienceContainer');
     if (!container) return;
-    
+
     container.innerHTML = '';
-    
+
     experiences.forEach(experience => {
         const card = createProjectCard(experience); // Reuse the same card template
         card.onclick = () => handleProjectClick(experience); // Use handleProjectClick
@@ -1104,22 +1129,22 @@ function initCarousel() {
     const overlay = document.getElementById('imageOverlay');
     const overlayImage = document.getElementById('overlayImage');
     const overlayClose = document.getElementById('overlayClose');
-    
+
     if (!imageWrapper) return;
-    
+
     // Clear wrapper
     imageWrapper.innerHTML = '';
-    
+
     // Create image elements
     shuffledCarouselImages.forEach((image, index) => {
         const imageElement = document.createElement('div');
         imageElement.className = 'carousel-image';
         if (index === 0) imageElement.classList.add('active');
-        
+
         imageElement.innerHTML = `
             <img src="${image.src}" alt="${image.alt}" loading="lazy">
         `;
-        
+
         // Add click to expand - show the current active image, not this specific one
         imageElement.addEventListener('click', () => {
             const currentActiveImage = document.querySelector('.carousel-image.active img');
@@ -1130,41 +1155,41 @@ function initCarousel() {
                 document.body.style.overflow = 'hidden';
             }
         });
-        
+
         imageWrapper.appendChild(imageElement);
     });
-    
+
     // Set up overlay close
     overlayClose.addEventListener('click', closeOverlay);
     overlay.addEventListener('click', (e) => {
         if (e.target === overlay) closeOverlay();
     });
-    
+
     // ESC key to close overlay
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && overlay.classList.contains('active')) {
             closeOverlay();
         }
     });
-    
+
     // Initialize nav carousel
     initNavCarousel();
-    
+
     // Start auto-play
     startAutoPlay();
-    
+
     // Pause on hover
     const carousel = document.getElementById('imageCarousel');
     if (carousel) {
         carousel.addEventListener('mouseenter', () => {
             clearInterval(carouselInterval);
         });
-        
+
         carousel.addEventListener('mouseleave', () => {
             startAutoPlay();
         });
     }
-    
+
     // Set up scroll detection for nav carousel
     initScrollDetection();
 }
@@ -1178,33 +1203,33 @@ function closeOverlay() {
 function nextImage() {
     const images = document.querySelectorAll('.carousel-image');
     const navItems = document.querySelectorAll('.nav-carousel-item');
-    
+
     // If we have main carousel images, use those (home page)
     if (images.length > 0) {
         // Remove active class from current image
         images[currentImageIndex].classList.remove('active');
-        
+
         // Move to next image
         currentImageIndex = (currentImageIndex + 1) % images.length;
-        
+
         // Add active class to new image
         images[currentImageIndex].classList.add('active');
-        
+
         // Update nav carousel
         updateNavCarousel();
-    } 
+    }
     // If we only have nav carousel items (other pages), cycle those
     else if (navItems.length > 0) {
         // Remove active class from current nav item
         navItems[currentImageIndex].classList.remove('active');
-        
+
         // Move to next image
         currentImageIndex = (currentImageIndex + 1) % navItems.length;
-        
+
         // Add active class to new nav item
         navItems[currentImageIndex].classList.add('active');
     }
-    
+
     // Update search highlight with new image colors
     setTimeout(updateSearchHighlight, 100);
 }
@@ -1214,7 +1239,7 @@ function initNavCarousel() {
     const navCarousel = document.getElementById('navCarousel');
     const navCarouselImage = document.getElementById('navCarouselImage');
     if (!navCarousel || !navCarouselImage) return;
-    
+
     // Create fade transition elements for nav carousel
     navCarouselImage.innerHTML = '';
     shuffledCarouselImages.forEach((img, idx) => {
@@ -1223,12 +1248,12 @@ function initNavCarousel() {
         el.innerHTML = `<img src="${img.src}" alt="${img.alt}" loading="lazy">`;
         navCarouselImage.appendChild(el);
     });
-    
+
     // Initialize currentImageIndex if not set
     if (typeof currentImageIndex === 'undefined') {
         currentImageIndex = 0;
     }
-    
+
     navCarousel.addEventListener('click', () => {
         const mainCarousel = document.getElementById('imageCarousel');
         if (mainCarousel) {
@@ -1240,35 +1265,35 @@ function initNavCarousel() {
 function updateNavCarousel() {
     const navItems = document.querySelectorAll('.nav-carousel-item');
     if (!navItems.length) return;
-    
+
     // Update nav carousel with fade transition
     navItems.forEach((item, idx) => {
         item.classList.toggle('active', idx === currentImageIndex);
     });
-    
+
     // Update search highlight when nav carousel changes
     setTimeout(updateSearchHighlight, 100);
 }
 
 function initScrollDetection() {
     const navCarousel = document.getElementById('navCarousel');
-    const navLinks    = document.querySelector('.nav-links');
-    const navCenter   = document.querySelector('.nav-center');
-    const mainCar     = document.getElementById('imageCarousel');
-    
+    const navLinks = document.querySelector('.nav-links');
+    const navCenter = document.querySelector('.nav-center');
+    const mainCar = document.getElementById('imageCarousel');
+
     // If there's no main carousel (other pages), show nav carousel always and start auto-play
     if (!mainCar) {
         if (navCarousel && navLinks && navCenter) {
             navCarousel.classList.add('active');
             navLinks.classList.add('carousel-active');
             navCenter.classList.add('has-carousel');
-            
+
             // Start auto-play for nav carousel on pages without main carousel
             startAutoPlay();
         }
         return;
     }
-    
+
     if (!(navCarousel && navLinks && navCenter && mainCar)) return;
 
     const observer = new IntersectionObserver(entries => {
@@ -1303,9 +1328,9 @@ function resetAutoPlay() {
 function loadProjectsList() {
     const container = document.getElementById('projectsList');
     if (!container) return;
-    
+
     container.innerHTML = '';
-    
+
     if (filteredProjects.length === 0) {
         container.innerHTML = `
             <div style="text-align: center; padding: var(--spacing-2xl); color: var(--text-muted);">
@@ -1314,7 +1339,7 @@ function loadProjectsList() {
         `;
         return;
     }
-    
+
     filteredProjects.forEach(project => {
         const item = createProjectListItem(project);
         container.appendChild(item);
@@ -1325,11 +1350,11 @@ function loadProjectsList() {
 function initFilters() {
     const filterInputs = document.querySelectorAll('.filter-option input[type="checkbox"]');
     const searchInput = document.getElementById('projectSearch');
-    
+
     filterInputs.forEach(input => {
         input.addEventListener('change', filterProjects);
     });
-    
+
     if (searchInput) {
         searchInput.addEventListener('input', filterProjects);
     }
@@ -1353,10 +1378,10 @@ function scrollToSection(sectionId) {
 // Update navigation active states for home page
 function updateNavigation() {
     if (currentPage !== 'home') return;
-    
+
     const sections = ['about', 'work', 'contact'];
     const navLinks = document.querySelectorAll('.nav-link');
-    
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -1377,7 +1402,7 @@ function updateNavigation() {
         threshold: 0.3,
         rootMargin: '-100px 0px'
     });
-    
+
     sections.forEach(id => {
         const element = document.getElementById(id);
         if (element) observer.observe(element);
@@ -1399,13 +1424,13 @@ function initMobileMenu() {
 function handleResize() {
     const panel = document.getElementById('articlePanel');
     if (!panel) return; // Exit if panel doesn't exist (e.g., on projects page)
-    
+
     // If we're on mobile and panel is open, close it and open full page instead
     if (!shouldShowSplitPane() && panel.classList.contains('active') && currentProject) {
         panel.classList.remove('active');
         openProject(currentProject);
     }
-    
+
     // If we're on desktop and full page is open, close it and show in panel instead
     if (shouldShowSplitPane() && currentProject && currentPage === 'home') {
         const projectPage = document.getElementById(`project-${currentProject.id}`);
@@ -1422,11 +1447,11 @@ function initCustomCursor() {
     const cursor = document.createElement('div');
     cursor.className = 'custom-cursor';
     document.body.appendChild(cursor);
-    
+
     const glow = document.createElement('div');
     glow.className = 'cursor-glow';
     document.body.appendChild(glow);
-    
+
     // Mouse movement tracking - immediate response
     document.addEventListener('mousemove', (e) => {
         // Update both cursor and glow position immediately
@@ -1434,39 +1459,39 @@ function initCustomCursor() {
         cursor.style.top = e.clientY + 'px';
         glow.style.left = e.clientX + 'px';
         glow.style.top = e.clientY + 'px';
-        
+
         // Sample colors and update glow
         updateGlowColor(e.target);
     });
-    
+
     // Hover effects
     document.addEventListener('mouseover', (e) => {
         if (e.target.matches('a, button, .project-card, .carousel-image, .nav-link, .contact-link, .theme-toggle, .action-button')) {
             cursor.classList.add('hover');
         }
     });
-    
+
     document.addEventListener('mouseout', (e) => {
         if (e.target.matches('a, button, .project-card, .carousel-image, .nav-link, .contact-link, .theme-toggle, .action-button')) {
             cursor.classList.remove('hover');
         }
     });
-    
+
     // Click effects
     document.addEventListener('mousedown', () => {
         cursor.classList.add('click');
     });
-    
+
     document.addEventListener('mouseup', () => {
         cursor.classList.remove('click');
     });
-    
+
     // Hide cursor when leaving window
     document.addEventListener('mouseleave', () => {
         cursor.style.opacity = '0';
         glow.style.opacity = '0';
     });
-    
+
     document.addEventListener('mouseenter', () => {
         cursor.style.opacity = '1';
         glow.style.opacity = '1';
@@ -1477,10 +1502,10 @@ function initCustomCursor() {
 function updateGlowColor(element) {
     const glow = document.querySelector('.cursor-glow');
     if (!glow) return;
-    
+
     // Reset classes
     glow.classList.remove('warm', 'cool', 'vibrant', 'nature');
-    
+
     // Different color themes based on element and position
     if (element.closest('.carousel-image, .profile-image')) {
         // Image areas - sample warm tones
@@ -1498,31 +1523,31 @@ function updateGlowColor(element) {
 }
 
 // Initialize everything
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     initTheme();
     initNavigation();
     initMobileMenu();
     initCustomCursor();
     initNavCarousel();
     initScrollDetection();
-    
+
     // Initialize enhanced personal features
     initEnhancedFeatures();
-    
+
     // Check for admin mode
     checkAdminMode();
-    
+
     // Determine page type and run appropriate functions
     const isHomePage = document.getElementById('projectsContainer') !== null;
     const isProjectsPage = document.getElementById('projectsByYear') !== null;
-    
+
     if (isHomePage) {
         initFilters();
         loadProjects();
         loadExperiences();
         initCarousel();
         updateNavigation();
-        
+
         // Add admin overlays if in admin mode (delay to ensure content is loaded)
         if (isAdminMode) {
             setTimeout(addAdminOverlays, 500);
@@ -1530,10 +1555,10 @@ document.addEventListener('DOMContentLoaded', function() {
     } else if (isProjectsPage) {
         initProjectsPageFilters();
         loadProjectsByYear();
-        
+
         // Initialize nav carousel for non-home pages
         initNavCarousel();
-        
+
         // Add admin overlays if in admin mode (delay to ensure content is loaded)
         if (isAdminMode) {
             setTimeout(addAdminOverlays, 500);
@@ -1542,13 +1567,13 @@ document.addEventListener('DOMContentLoaded', function() {
         // For other pages (like detail.html), also initialize nav carousel
         initNavCarousel();
     }
-    
+
     // Set initial active nav state  
     const homeLink = document.querySelector('.nav-link[href="index.html"]') || document.querySelector('.nav-link[href="#home"]');
     if (homeLink) {
         homeLink.classList.add('active');
     }
-    
+
     // Theme toggle
     const themeToggle = document.getElementById('themeToggle');
     if (themeToggle) {
@@ -1557,19 +1582,19 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         console.log('Theme toggle button not found'); // Debug log
     }
-    
+
     // Handle browser back button
-    window.addEventListener('popstate', function(e) {
+    window.addEventListener('popstate', function (e) {
         if (currentProject) {
             closeProject();
         }
     });
-    
+
     // Handle resize events
     window.addEventListener('resize', handleResize);
-    
+
     // ESC key to close project/panel
-    document.addEventListener('keydown', function(e) {
+    document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape') {
             if (currentProject) {
                 closeProject();
@@ -1610,22 +1635,22 @@ function createSearchHighlight() {
     // Find the search message element
     const searchMessage = document.querySelector('.contact-search-message');
     if (!searchMessage) return;
-    
+
     // Create the highlight element
     const highlight = document.createElement('div');
     highlight.className = 'search-highlight';
     highlight.id = 'searchHighlight';
-    
+
     // Move the search message content into the highlight
     highlight.innerHTML = searchMessage.innerHTML;
     searchMessage.innerHTML = '';
     searchMessage.appendChild(highlight);
-    
+
     // Add click handler to open Google search
     highlight.addEventListener('click', () => {
         window.open('https://www.google.com/search?q="devpatelio"', '_blank');
     });
-    
+
     // Start color transitions
     updateSearchHighlight();
     setInterval(updateSearchHighlight, 2000); // Check more frequently
@@ -1638,14 +1663,14 @@ function updateSearchHighlight() {
 
     // find the current visible image in either main or nav carousel
     const visible = document.querySelector('.carousel-image.active img') ||
-                    document.querySelector('.nav-carousel-item.active img') ||
-                    document.querySelector('.carousel-image img');
+        document.querySelector('.nav-carousel-item.active img') ||
+        document.querySelector('.carousel-image img');
 
     // fallback subtle grey
-    let bg      = 'rgba(128,128,128,0.08)';
-    let brd     = 'rgba(128,128,128,0.20)';
-    let gradA   = '#4facfe';
-    let gradB   = '#00f2fe';
+    let bg = 'rgba(128,128,128,0.08)';
+    let brd = 'rgba(128,128,128,0.20)';
+    let gradA = '#4facfe';
+    let gradB = '#00f2fe';
 
     if (visible && visible.complete && visible.naturalWidth > 0) {
         const cols = extractColorsFromImage(visible);          // returns up‑to‑two colours
@@ -1654,10 +1679,10 @@ function updateSearchHighlight() {
             gradB = cols[1] || cols[0];
 
             /* make an ultra‑light fill version of gradA */
-            const rgb  = gradA.match(/\d+/g).map(Number);      // "rgb(r,g,b)" → [r,g,b]
-            const hsl  = rgbToHsl(rgb[0], rgb[1], rgb[2]);     // existing helper
-            const lite = hslToRgb(hsl[0], hsl[1]*0.3, Math.max(hsl[2]*0.85, 85));
-            bg  = `rgba(${lite.join(',')},0.08)`;
+            const rgb = gradA.match(/\d+/g).map(Number);      // "rgb(r,g,b)" → [r,g,b]
+            const hsl = rgbToHsl(rgb[0], rgb[1], rgb[2]);     // existing helper
+            const lite = hslToRgb(hsl[0], hsl[1] * 0.3, Math.max(hsl[2] * 0.85, 85));
+            bg = `rgba(${lite.join(',')},0.08)`;
             brd = `rgba(${lite.join(',')},0.30)`;
         }
     }
@@ -1670,7 +1695,7 @@ function updateSearchHighlight() {
 
     /* expose gradient colours for the hover rule */
     document.documentElement.style.setProperty('--search-grad-start', gradA);
-    document.documentElement.style.setProperty('--search-grad-end',   gradB);
+    document.documentElement.style.setProperty('--search-grad-end', gradB);
 }
 
 
@@ -1679,17 +1704,17 @@ function rgbToHsl(r, g, b) {
     r /= 255;
     g /= 255;
     b /= 255;
-    
+
     const max = Math.max(r, g, b);
     const min = Math.min(r, g, b);
     let h, s, l = (max + min) / 2;
-    
+
     if (max === min) {
         h = s = 0;
     } else {
         const d = max - min;
         s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-        
+
         switch (max) {
             case r: h = (g - b) / d + (g < b ? 6 : 0); break;
             case g: h = (b - r) / d + 2; break;
@@ -1697,7 +1722,7 @@ function rgbToHsl(r, g, b) {
         }
         h /= 6;
     }
-    
+
     return [h * 360, s * 100, l * 100];
 }
 
@@ -1705,28 +1730,28 @@ function hslToRgb(h, s, l) {
     h /= 360;
     s /= 100;
     l /= 100;
-    
+
     const hue2rgb = (p, q, t) => {
         if (t < 0) t += 1;
         if (t > 1) t -= 1;
-        if (t < 1/6) return p + (q - p) * 6 * t;
-        if (t < 1/2) return q;
-        if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+        if (t < 1 / 6) return p + (q - p) * 6 * t;
+        if (t < 1 / 2) return q;
+        if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
         return p;
     };
-    
+
     let r, g, b;
-    
+
     if (s === 0) {
         r = g = b = l;
     } else {
         const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
         const p = 2 * l - q;
-        r = hue2rgb(p, q, h + 1/3);
+        r = hue2rgb(p, q, h + 1 / 3);
         g = hue2rgb(p, q, h);
-        b = hue2rgb(p, q, h - 1/3);
+        b = hue2rgb(p, q, h - 1 / 3);
     }
-    
+
     return [
         Math.round(r * 255),
         Math.round(g * 255),
@@ -1740,71 +1765,71 @@ function extractColorsFromImage(img) {
         // Create a canvas and try to get image data
         const canvas = document.createElement('canvas');
         const ctx = canvas.getContext('2d');
-        
+
         // Set canvas size
         canvas.width = 100;
         canvas.height = 100;
-        
+
         // Try to draw the image
         ctx.drawImage(img, 0, 0, 100, 100);
-        
+
         // Try to get image data
         const imageData = ctx.getImageData(0, 0, 100, 100);
         const data = imageData.data;
-        
+
         // Sample colors from the image
         const colors = [];
         const step = 10; // Sample every 10th pixel
-        
+
         for (let i = 0; i < data.length; i += step * 4) {
             const r = data[i];
             const g = data[i + 1];
             const b = data[i + 2];
             const a = data[i + 3];
-            
+
             // Skip transparent pixels
             if (a < 128) continue;
-            
+
             // Skip very dark or very light colors
             const brightness = (r + g + b) / 3;
             if (brightness < 30 || brightness > 220) continue;
-            
+
             colors.push([r, g, b]);
         }
-        
+
         if (colors.length > 0) {
             // Find the most common color
             const colorCounts = {};
             colors.forEach(color => {
-                const key = `${Math.floor(color[0]/20)*20},${Math.floor(color[1]/20)*20},${Math.floor(color[2]/20)*20}`;
+                const key = `${Math.floor(color[0] / 20) * 20},${Math.floor(color[1] / 20) * 20},${Math.floor(color[2] / 20) * 20}`;
                 colorCounts[key] = (colorCounts[key] || 0) + 1;
             });
-            
+
             const sortedColors = Object.entries(colorCounts)
-                .sort(([,a], [,b]) => b - a)
+                .sort(([, a], [, b]) => b - a)
                 .slice(0, 2)
                 .map(([color]) => {
                     const [r, g, b] = color.split(',').map(Number);
                     return `rgb(${r}, ${g}, ${b})`;
                 });
-            
+
             if (sortedColors.length >= 2) {
                 return sortedColors;
             } else if (sortedColors.length === 1) {
                 // Create a complementary color
                 const [r, g, b] = sortedColors[0].match(/\d+/g).map(Number);
-                const complementary = `rgb(${255-r}, ${255-g}, ${255-b})`;
+                const complementary = `rgb(${255 - r}, ${255 - g}, ${255 - b})`;
                 return [sortedColors[0], complementary];
             }
         }
-        
+
     } catch (error) {
         console.log('Canvas access failed, using fallback colors');
     }
-    
+
     // Fallback: use filename-based colors that are more image-like
     const filename = img.src.split('/').pop().toLowerCase();
-    
+
     // Create a more sophisticated color mapping based on image content hints
     let hash = 0;
     for (let i = 0; i < filename.length; i++) {
@@ -1812,7 +1837,7 @@ function extractColorsFromImage(img) {
         hash = ((hash << 5) - hash) + char;
         hash = hash & hash;
     }
-    
+
     // Use the hash to select from predefined natural color palettes
     const palettes = [
         // Warm sunset colors
@@ -1832,7 +1857,7 @@ function extractColorsFromImage(img) {
         // Gold/yellow tones
         ['rgb(255, 200, 100)', 'rgb(255, 220, 150)']
     ];
-    
+
     const paletteIndex = Math.abs(hash) % palettes.length;
     return palettes[paletteIndex];
 }
@@ -1842,30 +1867,30 @@ function initColorExtraction() {
     const observer = new MutationObserver(() => {
         setTimeout(updateSearchHighlight, 200); // Small delay to ensure image is loaded
     });
-    
+
     const carouselWrapper = document.getElementById('carouselImageWrapper');
     if (carouselWrapper) {
-        observer.observe(carouselWrapper, { 
-            childList: true, 
-            subtree: true, 
-            attributes: true, 
-            attributeFilter: ['style', 'class'] 
+        observer.observe(carouselWrapper, {
+            childList: true,
+            subtree: true,
+            attributes: true,
+            attributeFilter: ['style', 'class']
         });
     }
-    
+
     // Also listen for image load events
     document.addEventListener('load', (e) => {
         if (e.target.tagName === 'IMG' && e.target.closest('.carousel-image-wrapper')) {
             setTimeout(updateSearchHighlight, 100);
         }
     }, true);
-    
+
     // Listen for carousel image class changes
     const carouselImages = document.querySelectorAll('.carousel-image');
     carouselImages.forEach(img => {
-        observer.observe(img, { 
-            attributes: true, 
-            attributeFilter: ['class'] 
+        observer.observe(img, {
+            attributes: true,
+            attributeFilter: ['class']
         });
     });
 }
@@ -1880,7 +1905,7 @@ const ADMIN_PASSWORD = '1104AInnov8!';
 function checkAdminMode() {
     const urlParams = new URLSearchParams(window.location.search);
     const password = urlParams.get('admin');
-    
+
     if (password === ADMIN_PASSWORD) {
         isAdminMode = true;
         showAdminControls();
@@ -2029,7 +2054,7 @@ function showAdminControls() {
         `;
         document.head.insertAdjacentHTML('beforeend', adminStyles);
     }
-    
+
     // Add admin indicator
     if (!document.getElementById('admin-indicator')) {
         const indicator = document.createElement('div');
@@ -2038,7 +2063,7 @@ function showAdminControls() {
         indicator.innerHTML = '🔧 ADMIN MODE<br><small>Edit mode active</small>';
         document.body.appendChild(indicator);
     }
-    
+
     // Add admin overlays to existing content
     addAdminOverlays();
 }
@@ -2057,7 +2082,7 @@ function addAdminOverlays() {
             card.appendChild(overlay);
         }
     });
-    
+
     // Add overlays to experience cards on home page
     document.querySelectorAll('#experienceContainer .project-card').forEach((card, index) => {
         if (!card.querySelector('.admin-overlay')) {
@@ -2071,7 +2096,7 @@ function addAdminOverlays() {
             card.appendChild(overlay);
         }
     });
-    
+
     // Add overlays to project cards on projects page
     document.querySelectorAll('#projectsByYear .project-card').forEach((card, index) => {
         if (!card.querySelector('.admin-overlay')) {
@@ -2085,7 +2110,7 @@ function addAdminOverlays() {
             card.appendChild(overlay);
         }
     });
-    
+
     // Add create buttons
     addCreateButtons();
 }
@@ -2102,7 +2127,7 @@ function addCreateButtons() {
         createBtn.onclick = () => createNewItem('project');
         document.body.appendChild(createBtn);
     }
-    
+
     // Add create button to experiences section on home page - positioned lower
     const experienceContainer = document.getElementById('experienceContainer');
     if (experienceContainer && !document.getElementById('create-experience-btn')) {
@@ -2114,7 +2139,7 @@ function addCreateButtons() {
         createBtn.onclick = () => createNewItem('experience');
         document.body.appendChild(createBtn);
     }
-    
+
     // Add create button to projects page
     const projectsByYear = document.getElementById('projectsByYear');
     if (projectsByYear && !document.getElementById('create-project-page-btn')) {
@@ -2131,7 +2156,7 @@ function addCreateButtons() {
 function editItem(type, index) {
     const data = type === 'project' ? projects[index] : experiences[index];
     if (!data) return;
-    
+
     showJSONEditor(type, data, index);
 }
 
@@ -2140,14 +2165,14 @@ function editProjectPageItem(index) {
     const displayedProjects = getFilteredProjectsForPage();
     const project = displayedProjects[index];
     const actualIndex = projects.findIndex(p => p.id === project.id);
-    
+
     showJSONEditor('project', project, actualIndex);
 }
 
 function deleteItem(type, index) {
     const data = type === 'project' ? projects : experiences;
     const item = data[index];
-    
+
     if (confirm(`Delete "${item.title}"? This cannot be undone.`)) {
         data.splice(index, 1);
         downloadUpdatedScript();
@@ -2159,7 +2184,7 @@ function deleteProjectPageItem(index) {
     const displayedProjects = getFilteredProjectsForPage();
     const project = displayedProjects[index];
     const actualIndex = projects.findIndex(p => p.id === project.id);
-    
+
     deleteItem('project', actualIndex);
 }
 
@@ -2213,7 +2238,7 @@ function createNewItem(type) {
             ]
         }
     };
-    
+
     showJSONEditor(type, template, -1); // -1 indicates new item
 }
 
@@ -2238,9 +2263,9 @@ function showJSONEditor(type, data, index) {
             </div>
         </div>
     `;
-    
+
     document.body.appendChild(modal);
-    
+
     // Focus the textarea
     setTimeout(() => {
         document.getElementById('json-textarea').focus();
@@ -2256,10 +2281,10 @@ function closeJSONEditor() {
 
 function saveJSONChanges(type, index) {
     const textarea = document.getElementById('json-textarea');
-    
+
     try {
         const updatedData = JSON.parse(textarea.value);
-        
+
         if (index === -1) {
             // New item
             if (type === 'project') {
@@ -2275,15 +2300,15 @@ function saveJSONChanges(type, index) {
                 experiences[index] = updatedData;
             }
         }
-        
+
         // Download updated script.js
         downloadUpdatedScript();
-        
+
         closeJSONEditor();
-        
+
         // Show success message
         alert('Changes saved! The updated script.js file has been downloaded. Replace your current script.js file with the downloaded version and refresh the page.');
-        
+
     } catch (error) {
         alert('Invalid JSON! Please check your syntax and try again.\n\nError: ' + error.message);
     }
@@ -2298,25 +2323,25 @@ function downloadUpdatedScript() {
             const projectsRegex = /const projects = \[[\s\S]*?\];/;
             const newProjectsString = `const projects = ${JSON.stringify(projects, null, 4)};`;
             scriptContent = scriptContent.replace(projectsRegex, newProjectsString);
-            
+
             // Replace experiences array
             const experiencesRegex = /const experiences = \[[\s\S]*?\];/;
             const newExperiencesString = `const experiences = ${JSON.stringify(experiences, null, 4)};`;
             scriptContent = scriptContent.replace(experiencesRegex, newExperiencesString);
-            
+
             // Download the updated file
             const blob = new Blob([scriptContent], { type: 'text/javascript' });
             const url = URL.createObjectURL(blob);
-            
+
             const a = document.createElement('a');
             a.href = url;
             a.download = 'script.js';
             a.style.display = 'none';
-            
+
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
-            
+
             URL.revokeObjectURL(url);
         })
         .catch(error => {
@@ -2329,7 +2354,7 @@ function getFilteredProjectsForPage() {
     // This should match the filtering logic used on the projects page
     const categoryFilter = document.getElementById('categoryFilter')?.value || 'all';
     const yearFilter = document.getElementById('yearFilter')?.value || 'all';
-    
+
     return projects.filter(project => {
         const matchesCategory = categoryFilter === 'all' || project.category === categoryFilter;
         const matchesYear = yearFilter === 'all' || project.year === yearFilter;
@@ -2349,20 +2374,20 @@ function truncateText(text, maxLength) {
 function createProjectCardForProjectsPage(project) {
     const card = document.createElement('div');
     card.className = 'project-card';
-    
+
     // Use the unified detail.html system
     const linkUrl = `detail.html?type=project&id=${project.id}`;
     card.onclick = () => window.location.href = linkUrl;
-    
+
     const truncatedTitle = truncateText(project.title, 60);
     const truncatedDescription = truncateText(project.description, 120);
-    
+
     card.innerHTML = `
         <div class="project-image">
-            ${project.card_image ? 
-                `<img src="${project.card_image}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: cover;">` : 
-                `<span class="project-image-text">${project.category}</span>`
-            }
+            ${project.card_image ?
+            `<img src="${project.card_image}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: cover;">` :
+            `<span class="project-image-text">${project.category}</span>`
+        }
         </div>
         <div class="project-content">
             <div class="project-header">
@@ -2375,7 +2400,7 @@ function createProjectCardForProjectsPage(project) {
             </div>
         </div>
     `;
-    
+
     return card;
 }
 
@@ -2383,14 +2408,14 @@ function createProjectCardForProjectsPage(project) {
 function filterProjectsPage() {
     const categoryFilter = document.getElementById('categoryFilter')?.value || 'all';
     const yearFilter = document.getElementById('yearFilter')?.value || 'all';
-    
+
     const filteredProjects = projects.filter(project => {
         const matchesCategory = categoryFilter === 'all' || project.category === categoryFilter;
         const matchesYear = yearFilter === 'all' || project.year === yearFilter;
-        
+
         return matchesCategory && matchesYear;
     });
-    
+
     loadProjectsByYear(filteredProjects);
 }
 
@@ -2398,9 +2423,9 @@ function filterProjectsPage() {
 function loadProjectsByYear(filteredProjects = projects) {
     const container = document.getElementById('projectsByYear');
     if (!container) return;
-    
+
     container.innerHTML = '';
-    
+
     if (filteredProjects.length === 0) {
         container.innerHTML = `
             <div style="text-align: center; padding: var(--spacing-2xl); color: var(--text-muted);">
@@ -2409,7 +2434,7 @@ function loadProjectsByYear(filteredProjects = projects) {
         `;
         return;
     }
-    
+
     // Group projects by year
     const projectsByYear = {};
     filteredProjects.forEach(project => {
@@ -2418,28 +2443,28 @@ function loadProjectsByYear(filteredProjects = projects) {
         }
         projectsByYear[project.year].push(project);
     });
-    
+
     // Sort years in descending order
     const sortedYears = Object.keys(projectsByYear).sort((a, b) => b - a);
-    
+
     // Create sections for each year
     sortedYears.forEach(year => {
         const yearSection = document.createElement('div');
         yearSection.className = 'year-section';
-        
+
         const yearHeader = document.createElement('h2');
         yearHeader.className = 'year-header';
         yearHeader.textContent = year;
         yearSection.appendChild(yearHeader);
-        
+
         const projectsGrid = document.createElement('div');
         projectsGrid.className = 'projects-grid';
-        
+
         projectsByYear[year].forEach(project => {
             const card = createProjectCardForProjectsPage(project);
             projectsGrid.appendChild(card);
         });
-        
+
         yearSection.appendChild(projectsGrid);
         container.appendChild(yearSection);
     });
@@ -2449,11 +2474,11 @@ function loadProjectsByYear(filteredProjects = projects) {
 function initProjectsPageFilters() {
     const categoryFilter = document.getElementById('categoryFilter');
     const yearFilter = document.getElementById('yearFilter');
-    
+
     if (categoryFilter) {
         categoryFilter.addEventListener('change', filterProjectsPage);
     }
-    
+
     if (yearFilter) {
         yearFilter.addEventListener('change', filterProjectsPage);
     }
@@ -2463,12 +2488,12 @@ function initProjectsPageFilters() {
 function copyCode(button) {
     const codeBlock = button.closest('.code-block');
     const codeContent = codeBlock.querySelector('code').textContent;
-    
+
     navigator.clipboard.writeText(codeContent).then(() => {
         const originalText = button.textContent;
         button.textContent = 'Copied!';
         button.style.color = 'var(--accent-green)';
-        
+
         setTimeout(() => {
             button.textContent = originalText;
             button.style.color = '';
@@ -2481,7 +2506,7 @@ function copyCode(button) {
         textArea.select();
         document.execCommand('copy');
         document.body.removeChild(textArea);
-        
+
         const originalText = button.textContent;
         button.textContent = 'Copied!';
         setTimeout(() => {
@@ -2492,12 +2517,12 @@ function copyCode(button) {
 
 // Export for module usage
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { 
-        projects, 
-        openProject, 
-        closeProject, 
-        showProjectInPanel, 
-        showHomePage, 
-        showProjectsPage 
+    module.exports = {
+        projects,
+        openProject,
+        closeProject,
+        showProjectInPanel,
+        showHomePage,
+        showProjectsPage
     };
 }
