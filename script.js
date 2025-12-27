@@ -653,6 +653,13 @@ const carouselImages = [
     { src: 'media_converted/IMG_2211.jpg', alt: 'Photo 35' },
     { src: 'media_converted/IMG_0621.jpg', alt: 'Photo 37' },
     { src: 'media_converted/IMG_0232.jpg', alt: 'Photo 38' },
+    { src: 'media_converted/IMG_9999.png', alt: 'Photo 39' },
+    { src: 'media_converted/IMG_10000.png', alt: 'Photo 40' },
+    { src: 'media_converted/IMG_10001.png', alt: 'Photo 41' },
+    { src: 'media_converted/IMG_10002.png', alt: 'Photo 42' },
+    { src: 'media_converted/IMG_10003.png', alt: 'Photo 43' },
+    { src: 'media_converted/IMG_10004.png', alt: 'Photo 44' },
+    { src: 'media_converted/IMG_10005.png', alt: 'Photo 45' },
     // { src: 'media_converted/B9556B60-DC38-4820-A4B5-72EC4936D702.jpg', alt: 'Photo 40' }
 ];
 
